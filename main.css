@@ -47,8 +47,8 @@ header nav a{
 
 
 header nav a:hover {
-  background: #F5BB27;
-  color: #734217;
+  background: #6E2606;
+  color: #FDFBD4;
 }
 
 .element {
@@ -101,8 +101,7 @@ p {
 */
 
 .text-link {
-  color: #9A5A23;
-  text-decoration: none;
+  color: #AD4804;
   font-weight: 600;
   transition: 0.2s;
 }
@@ -117,37 +116,36 @@ p {
 }
 
 .main-nav{
-
+  background: #AD4804;
   display: inline-block;
 }
 
 .nav-link {
-  color: #FDFBD4;
+  background: #AD4804;
+  color: #F7D888;
   text-decoration: none;
-  font-weight: 600;
   padding: 0.6rem 1rem;
   display: inline-block;
   transition: 0.2s;
 }
 
 .nav-link:hover, .nav-link:focus {
-  background: #E6AB06;
-  color: #734217; 
+  background: #6E2606;
+  color: #FDFBD4; 
 }
 
 .button, .button-nav, .product-link {
-  background: #4E6B53;
-  color: #FDFBD4;
+ background: #AD4804;
+  color: #F7D888;
   border: none;
   padding: 0.6rem 1rem;
   text-decoration: none;
   transition: 0.2s;
-  font-weight: 600;
 }
 
 .button-nav:hover, .button-nav:focus, .button:hover, .button:focus, .product-link:hover, .product-link:focus {
-  background: #E6AB06;
-  color: #734217;
+   background: #6E2606;
+  color: #FDFBD4; 
 }
 
 .form-elements, .payment-form{
@@ -172,10 +170,10 @@ p {
 }
 
 .form-elements input {
-  border: 2px solid #4E6B53;
+  border: 1px solid #787878;
   border-radius: 0.25rem;
   padding: 0.5rem;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Charis SIL", serif;
   transition: 0.2s;
 }
 
@@ -211,9 +209,7 @@ input[type="radio"] { /*source I used to look how to style input: https://develo
 }
 
 .form-elements input:hover, .form-elements input:focus {
-  border-color: #4E6B53;
-  outline: 2px solid #4E6B53;
-  background-color:#FFF3E0;
+  border: 1.5px solid #330708;
 }
 
 .image-link:hover img, .image-link:focus img {
@@ -278,21 +274,20 @@ section{
 }
 
 .form-button {
-  background: #C47A3D;
-  font-family: 'Mulish', sans-serif;
-  color: white;
-  padding: 0.6rem 1rem;
-  border-radius: 4px;
-  border: 2px solid #734217;
+  background: #708F73;
+  font-family: "Charis SIL", serif;
+  color: #FDFBD4;
+  padding: 0.2rem 1rem;
+  border: 1.5px solid #043709;
   transition: 0.2s;
   font-weight: 600;
   text-decoration: none;
 }
 
 .form-button:hover {
-  background: #F5BB27;
-  color: #734217;
-  border: 3px solid #734217;
+  background: #F7D888;
+  color: #6E2606;
+  border: 2px solid #690D0E;
 }
 
 .form-button, .radio-option {
