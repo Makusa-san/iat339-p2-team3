@@ -1,0 +1,413 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+code{
+  white-space: pre-wrap; /* used to ensure that code examples adjust to the page size, found here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/white-space */
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background: #FDFBD4;
+  color: #4E6B53;
+  padding: 2rem;
+  margin: 0;
+}
+
+header{
+  background: #4E6B53;
+  color: #FDFBD4;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+header{
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* used to adjust header elements placing: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap*/
+  border-radius: 1.75rem;
+}
+
+.style-guide-page header nav {
+  display: flex;
+  flex-wrap: wrap;  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap*/
+  gap: 0.5rem;        
+}
+
+header nav a{
+  color: #FDFBD4;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  transition: 0.2s;
+}
+
+
+header nav a:hover {
+  background: #F5BB27;
+  color: #734217;
+}
+
+.element {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /*used fror style and aestheitic: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow */
+}
+
+h1{
+  font-family: 'Arima Madurai', cursive;
+  font-size: 2.8rem;
+  padding: 0.6rem 1rem;
+}
+
+h2 {
+  font-family: 'Arima Madurai', cursive;
+  margin-top: 6rem;
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-family: 'Arima Madurai', cursive;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-family: 'Arima Madurai', cursive;
+  margin-bottom: 0.25rem;
+  font-size: 1.3rem;
+
+}
+h5 {
+  font-family: 'Arima Madurai', cursive;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+
+}
+
+p {
+  margin-top: 0;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+.text-link {
+  color: #9A5A23;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.text-link:hover {
+  color: #E60E0E;
+  text-decoration: underline;
+}
+
+.text-link:focus {
+  outline: 1px solid #E60E0E;
+}
+
+.main-nav{
+  background: #4E6B53;
+  display: inline-block;
+}
+
+.nav-link {
+  background: #4E6B53;
+  color: #FDFBD4;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.nav-link:hover, .nav-link:focus {
+  background: #E6AB06;
+  color: #734217; 
+}
+
+.button, .button-nav, .product-link {
+  background: #4E6B53;
+  color: #FDFBD4;
+  border: none;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.button-nav:hover, .button-nav:focus, .button:hover, .button:focus, .product-link:hover, .product-link:focus {
+  background: #E6AB06;
+  color: #734217;
+}
+
+.form-elements, .payment-form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 18rem;
+}
+
+.image-link{
+  display: inline-block;
+  max-width: 100%;
+}
+
+.image-link img {
+  border: 3px solid #734217;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+
+.form-elements input {
+  border: 2px solid #4E6B53;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-family: 'Mulish', sans-serif;
+  transition: 0.2s;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+input[type="radio"] { /*source I used to look how to style input: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Advanced_form_styling*/
+  accent-color: #E60E0E;
+}
+
+.radio-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #C47A3D; 
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  border: 2px solid #734217;
+  font-family: 'Mulish', sans-serif;
+  color: #FFF3E0;
+  transition: 0.1s;
+  font-weight: 600;
+}
+
+.radio-option:hover {
+  background: #F5BB27; 
+  border-color: #E60E0E; 
+  border: 3px solid #734217;
+  color: #734217;
+}
+
+.form-elements input:hover, .form-elements input:focus {
+  border-color: #4E6B53;
+  outline: 2px solid #4E6B53;
+  background-color:#FFF3E0;
+}
+
+.image-link:hover img, .image-link:focus img {
+  border: 4px solid #C47A3D;
+  transform: scale(1.03);
+  filter: brightness(1.08) saturate(1.08); /*looked up for some effects when hovering over image: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/brightness */
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+.ordered-list li{
+  margin-bottom: 1rem;
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+section{
+  margin-bottom: 3rem;
+}
+
+
+.product-listing {
+  max-width: 16.25rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3); /*used fror style and aestheitic: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow */
+}
+
+.product-allergens{
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.card-footer .product-cost {
+  font-weight: 700;
+  color: #734217;
+  margin: 0;
+}
+
+.form-button {
+  background: #C47A3D;
+  font-family: 'Mulish', sans-serif;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  border: 2px solid #734217;
+  transition: 0.2s;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-button:hover {
+  background: #F5BB27;
+  color: #734217;
+  border: 3px solid #734217;
+}
+
+.form-button, .radio-option {
+  font-size: 1rem; 
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 1fr auto; /* looked how to place elements in columns: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns*/
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0rem;
+  border-bottom: 1px solid #F5BB27;
+}
+
+.item-details {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.item-price {
+  font-weight: 600;
+  color: #734217;
+}
+
+.cart-item-image {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover; /*helped with correct image adjustment, looked up here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit */
+  border-radius: 8px;
+}
+.cart-total {
+  display: grid;
+  grid-template-columns: 1fr auto; /* looked how to place elements in columns: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns*/
+  align-items: center;
+  padding: 0.8rem 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+img{
+  max-width:100%;
+  height: auto;
+  display: block;
+}
+
+p a, li a {
+  overflow-wrap: anywhere; /* helped me to adjust text out of style guide componenets, in the imagery, found here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-wrap */
+  word-break: break-word; /* used for the same reason: https://css-tricks.com/almanac/properties/w/word-break/ */
+}
+
+
+/*
+  PRODUCTS LISTING PAGE STYLING
+*/
+
+.products-page {
+  padding: 0;
+}
+
+.products-page header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 0;
+  padding: 1.2rem 2rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 16.25rem); /*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/repeat */
+  gap: 2rem;
+  justify-content: center;
+}
+
+.products-page .main-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.products-page h2 {
+  padding: 2rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-description {
+  text-align: center;
+  max-width: 45rem; 
+  margin: 0 auto 6rem auto;
+}
+
+.products-page .element {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.products-page .payment-form {
+  margin: 0 auto;
+}
+
+.checkout-cart h2, .payment-form h2 {
+  font-size: 1.5rem;
+  font-family: 'Arima Madurai', cursive;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
