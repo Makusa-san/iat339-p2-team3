@@ -100,11 +100,22 @@
 
       <section class="element">
         <h3>Radio Button with Label</h3>
-
+        <!-- learnt how to make custom radio button here: https://gist.github.com/Cutcopy/3fce01b4e66c4663ef27-->
         <h4>Sample code:</h4>
-        <code>&lt;label class "radio-option"&gt;&lt;input type = "radio" name ="add-utensils"&gt;Add Utensils&lt;/label&gt;</code>
+        <code>&lt;label class="radio"&gt;
+        &lt;input type="radio" name="plan"&gt;
+        &lt;span class="custom-radio"&gt;&lt;/span&gt;
+        Add Utensils
+        &lt;/label&gt;
+        </code>
         <h4>Rendered element:</h4>
-        <label class = "radio-option"><input type = "radio" name ="add-utensils">Add Utensils</label>
+        <label class="radio">
+        <input type="radio" name="plan">
+        <span class="custom-radio"></span>
+        Add Utensils
+        </label>
+
+           
         <!--looked up here about radio type: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio-->
       </section>
 
@@ -262,8 +273,17 @@
             &lt;/div&gt;
 
             &lt;p&gt;Choose Your Payment Method:&lt;/p&gt;
-            &lt;label class="radio-option"&gt;&lt;input type="radio" name="payment"&gt;Credit/Debit Card&lt;/label&gt;
-            &lt;label class="radio-option"&gt;&lt;input type="radio" name="payment"&gt;PayPal&lt;/label&gt;
+            
+            &lt;label class="radio"&gt;
+            &lt;input type="radio" name="plan"&gt;
+            &lt;span class="custom-radio"&gt;&lt;/span&gt;
+            Credit/Debit Card
+            &lt;/label&gt;
+            &lt;label class="radio"&gt;
+            &lt;input type="radio" name="plan"&gt;
+            &lt;span class="custom-radio"&gt;&lt;/span&gt;
+            PayPal
+            &lt;/label&gt;
             &lt;button class="form-button" type="submit"&gt;Submit&lt;/button&gt;
           &lt;/form&gt;
         </code></pre>
@@ -285,11 +305,21 @@
             </div>
 
             <p>Choose Your Payment Method:</p>
-            <label class = "radio-option"><input type = "radio" name ="credit/debit">Credit/Debit Card</label>
-            <label class = "radio-option"><input type = "radio" name ="paypal">PayPal</label>
-            <button class = "form-button" type = "submit">Submit</button>
-          </form>
-      </section>
+
+            <label class="radio">
+            <input type="radio" name="plan">
+            <span class="custom-radio"></span>
+            Credit/Debit Card
+            </label>
+            <label class="radio">
+            <input type="radio" name="plan">
+            <span class="custom-radio"></span>
+            PayPal
+            </label>
+
+            <button class="form-button" type="submit">Submit</button>
+            </form>
+            </section>
 
       <section class="element">
         <h3>Checkout Cart</h3>

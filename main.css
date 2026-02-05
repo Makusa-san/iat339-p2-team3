@@ -161,11 +161,10 @@ p {
 }
 
 .image-link img {
-  border: 3px solid #734217;
+  border: 2px solid #330708;
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 10px;
   transition: 0.25s;
 }
 
@@ -183,38 +182,53 @@ input {
   border: 1px solid #ccc;
 }
 
-input[type="radio"] { /*source I used to look how to style input: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Advanced_form_styling*/
-  accent-color: #E60E0E;
-}
-
-.radio-option {
-  display: inline-flex;
+.radio {
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
-  background: #C47A3D; 
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  border: 2px solid #734217;
-  font-family: 'Mulish', sans-serif;
-  color: #FFF3E0;
-  transition: 0.1s;
-  font-weight: 600;
+  font-size: 18px;
+  gap: 10px;
 }
 
-.radio-option:hover {
-  background: #F5BB27; 
-  border-color: #E60E0E; 
-  border: 3px solid #734217;
-  color: #734217;
+.radio input {
+  display: none;
 }
+
+/*learnt how to style custom radio buttons here: https://gist.github.com/Cutcopy/3fce01b4e66c4663ef27*/
+.custom-radio {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #787878;
+  border-radius: 50%;
+  position: relative;
+}
+
+.radio input:hover + .custom-radio, .radio input:focus + .custom-radio {
+  border-color: #330708;
+}
+
+.radio input:checked + .custom-radio {
+  border-color: #330708;
+}
+
+.radio input:checked + .custom-radio::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #330708;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .form-elements input:hover, .form-elements input:focus {
-  border: 1.5px solid #330708;
+  border: 1px solid #330708;
 }
 
 .image-link:hover img, .image-link:focus img {
-  border: 4px solid #C47A3D;
-  transform: scale(1.03);
+  transform: scale(1.02);
   filter: brightness(1.08) saturate(1.08); /*looked up for some effects when hovering over image: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/brightness */
 }
 
@@ -287,7 +301,7 @@ section{
 .form-button:hover {
   background: #F7D888;
   color: #6E2606;
-  border: 2px solid #690D0E;
+  border: 1.5px solid #690D0E;
 }
 
 .form-button, .radio-option {
