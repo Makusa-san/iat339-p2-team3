@@ -224,7 +224,9 @@ input {
 
 
 .form-elements input:hover, .form-elements input:focus {
+  outline: none;
   border: 1px solid #330708;
+  box-shadow: 0 0 0 2px rgba(51, 7, 8, 0.2);
 }
 
 .image-link:hover img, .image-link:focus img {
