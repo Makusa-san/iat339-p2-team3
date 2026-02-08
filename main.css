@@ -1,0 +1,481 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+code{
+  white-space: pre-wrap; /* used to ensure that code examples adjust to the page size, found here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/white-space */
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+body {
+  font-family: "Charis SIL", serif;
+  background: #FFFEF1;
+  color: #330708;
+  padding: 2rem;
+  margin: 0;
+}
+
+header{
+  background: #AD4804;
+  color: #F7D888;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+header{
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* used to adjust header elements placing: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap*/
+  border-radius: 1.75rem;
+}
+
+.style-guide-page header nav {
+  display: flex;
+  flex-wrap: wrap;  /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap*/
+  gap: 0.5rem;        
+}
+
+header nav a{
+  color: #F7D888;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  transition: 0.2s;
+}
+
+
+header nav a:hover {
+  background: #6E2606;
+  color: #FDFBD4;
+}
+
+.element {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /*used fror style and aestheitic: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow */
+}
+
+h1{
+  font-family: "Arima Madurai", cursive;
+  font-size: 2.8rem;
+  padding: 0.6rem 1rem;
+  color: #FDFBD4;
+ 
+}
+
+h2 {
+  font-family: 'Arima Madurai', cursive;
+  margin-top: 6rem;
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-family: 'Arima Madurai', cursive;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-family: 'Arima Madurai', cursive;
+  margin-bottom: 0.25rem;
+  font-size: 1.3rem;
+
+}
+h5 {
+  font-family: 'Arima Madurai', cursive;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+
+}
+
+p {
+  margin-top: 0;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+.text-link {
+  color: #AD4804;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.text-link:hover {
+  color: #E60E0E;
+  text-decoration: underline;
+}
+
+.text-link:focus {
+  outline: 1px solid #E60E0E;
+}
+
+.main-nav{
+  background: #AD4804;
+  display: inline-block;
+}
+
+.nav-link {
+  background: #AD4804;
+  color: #F7D888;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.nav-link:hover, .nav-link:focus {
+  background: #6E2606;
+  color: #FDFBD4; 
+}
+
+.button, .button-nav, .product-link {
+ background: #AD4804;
+  color: #F7D888;
+  border: none;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.button-nav:hover, .button-nav:focus, .button:hover, .button:focus, .product-link:hover, .product-link:focus {
+   background: #6E2606;
+  color: #FDFBD4; 
+}
+
+.form-elements, .payment-form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 18rem;
+}
+
+.image-link{
+  display: inline-block;
+  max-width: 100%;
+}
+
+.image-link img {
+  border: 2px solid #330708;
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.25s;
+}
+
+.form-elements input {
+  border: 1px solid #787878;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-family: "Charis SIL", serif;
+  transition: 0.2s;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+}
+
+.radio input {
+  display: none;
+}
+
+/*learnt how to style custom radio buttons here: https://gist.github.com/Cutcopy/3fce01b4e66c4663ef27*/
+.custom-radio {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #787878;
+  border-radius: 50%;
+  position: relative;
+}
+
+.radio input:hover + .custom-radio, .radio input:focus + .custom-radio {
+  border-color: #330708;
+}
+
+.radio input:checked + .custom-radio {
+  border-color: #330708;
+}
+
+.radio input:checked + .custom-radio::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #330708;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.form-elements input:hover, .form-elements input:focus {
+  outline: none;
+  border: 1px solid #330708;
+  box-shadow: 0 0 0 2px rgba(51, 7, 8, 0.2);
+}
+
+.image-link:hover img, .image-link:focus img {
+  transform: scale(1.02);
+  filter: brightness(1.08) saturate(1.08); /*looked up for some effects when hovering over image: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/brightness */
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+.ordered-list li{
+  margin-bottom: 1rem;
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+section{
+  margin-bottom: 3rem;
+}
+
+
+.product-listing {
+  max-width: 19.25rem;
+  background: white;
+  border: 1.5px solid;
+  border-color: #330708;
+  text-align: center;
+}
+
+.product-listing h4, .product-allergens, .product-description {
+ text-align: left;
+ margin-left: 1rem;
+ color: #AD4804;
+}
+
+.product-info{
+ margin: 0;    
+}
+
+.product-listing h4{
+ font-family: "Charis SIL", serif;
+}
+.product-description{
+ font-weight: 200;
+}
+.product-allergens{
+  margin-bottom: 0.75rem;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
+}
+
+.product-image {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.card-footer .product-cost {
+  font-weight: 700;
+  color: #734217;
+  margin: 0;
+}
+
+.form-button {
+  background: #708F73;
+  font-family: "Charis SIL", serif;
+  color: #FDFBD4;
+  padding: 0.2rem 1rem;
+  border: 1.5px solid #043709;
+  transition: 0.2s;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-button:hover {
+  background: #F7D888;
+  color: #6E2606;
+  border: 1.5px solid #690D0E;
+}
+
+.form-button, .radio-option {
+  font-size: 1rem; 
+}
+
+.checkout-cart{
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.cart-header {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+  font-weight: 700;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #330708;
+  color: #330708;
+}
+
+.cart-items {
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 4fr 1fr; /* looked how to place elements in columns: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns*/
+  align-items: center;
+
+  padding: 0.5rem 0rem;
+  border-bottom: 1px solid #330708;
+}
+
+.item-details {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.item-name{
+  font-weight: 600;
+}
+
+.item-price {
+  font-weight: 600;
+  color: #330708;
+}
+
+.cart-item-image {
+  width: 9rem;
+  height: 6rem;
+  object-fit: cover; /*helped with correct image adjustment, looked up here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit */
+  border: 1px solid #330708;
+}
+.cart-total {
+  display: grid;
+  grid-template-columns: 4fr 1fr; /* looked how to place elements in columns: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns*/
+  align-items: center;
+  padding: 0.8rem 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-right: 1.5rem;
+  text-decoration: underline; 
+}
+
+.total-label{
+    justify-self: end;  
+    text-decoration: underline; 
+    margin-right: 0.5rem;
+}
+
+img{
+  max-width:100%;
+  height: auto;
+  display: block;
+}
+
+p a, li a {
+  overflow-wrap: anywhere; /* helped me to adjust text out of style guide componenets, in the imagery, found here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-wrap */
+  word-break: break-word; /* used for the same reason: https://css-tricks.com/almanac/properties/w/word-break/ */
+}
+
+
+/*
+  PRODUCTS LISTING PAGE STYLING
+*/
+
+
+.mapastry-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.products-page {
+  padding: 0;
+}
+
+.products-page-header {
+  position: sticky; /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/z-index */
+  border-radius: 0;
+  background: #AD4804; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+
+
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 19.25rem); /*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/repeat */
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+}
+
+.products-page .main-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.products-page h2 {
+  padding: 2rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-description {
+  text-align: center;
+  max-width: 45rem; 
+  margin: 0 auto 6rem auto;
+}
+
+.products-page .element {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.products-page .payment-form {
+  margin: 0 auto;
+}
+
+.checkout-cart h2, .payment-form h2 {
+  font-size: 1.5rem;
+  font-family: 'Arima Madurai', cursive;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
