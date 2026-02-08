@@ -264,10 +264,19 @@ section{
  margin-left: 1rem;
  color: #AD4804;
 }
+.product-listing h4{
+ font-family: "Charis SIL", serif;
+}
 
+.product-description{
+ font-weight: 200;
+}
 .product-allergens{
   margin-bottom: 0.75rem;
   text-decoration: underline;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
 }
 
 .product-image {
