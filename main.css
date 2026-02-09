@@ -41,6 +41,7 @@ header nav a{
   text-decoration: none;
   padding: 0.6rem 1rem;
   transition: 0.2s;
+  margin-left: 1rem;
 }
 
 
@@ -150,7 +151,11 @@ p {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  max-width: 18rem;
+  max-width: 25rem;
+}
+
+.form-elements label {
+    font-weight: 600;
 }
 
 .image-link{
@@ -344,7 +349,7 @@ section{
     box-sizing: border-box;
 }
 .checkout-cart {
-    max-width: 60rem; 
+    max-width: 70rem; 
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -493,6 +498,10 @@ p a, li a {
 .products-page .payment-form {
   margin: 0 auto;
 }
+
+/*
+  CHECKOUT PAGE STYLING
+*/
 
 .checkout-cart h2, .payment-form h2 {
   font-size: 1.5rem;
