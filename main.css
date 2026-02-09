@@ -23,14 +23,12 @@ header{
   color: #F7D888;
   padding: 2rem;
   margin-bottom: 2rem;
-}
-
-header{
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap; /* used to adjust header elements placing: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap*/
   border-radius: 1.75rem;
 }
+
 
 .style-guide-page header nav {
   display: flex;
@@ -144,7 +142,7 @@ p {
 }
 
 .button-nav:hover, .button-nav:focus, .button:hover, .button:focus, .product-link:hover, .product-link:focus {
-   background: #6E2606;
+  background: #6E2606;
   color: #FDFBD4; 
 }
 
@@ -229,6 +227,14 @@ input {
   box-shadow: 0 0 0 2px rgba(51, 7, 8, 0.2);
 }
 
+#form-post {
+    margin-bottom: 1rem;
+}
+
+.form-post{
+    margin-left: 15rem;
+}
+
 .image-link:hover img, .image-link:focus img {
   transform: scale(1.02);
   filter: brightness(1.08) saturate(1.08); /*looked up for some effects when hovering over image: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/brightness */
@@ -252,12 +258,15 @@ section{
 
 
 .product-listing {
-  max-width: 19.25rem;
+  width: 18.25rem;
+  height: 29rem;
+  max-width: 100%;
   background: white;
   border: 1.5px solid;
   border-color: #330708;
   text-align: center;
 }
+
 
 .product-listing h4, .product-allergens, .product-description {
  text-align: left;
@@ -265,9 +274,6 @@ section{
  color: #AD4804;
 }
 
-.product-info{
- margin: 0;    
-}
 
 .product-listing h4{
  font-family: "Charis SIL", serif;
@@ -276,7 +282,7 @@ section{
  font-weight: 200;
 }
 .product-allergens{
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
   text-decoration: underline;
   font-style: italic;
   font-weight: 400;
@@ -323,24 +329,38 @@ section{
   font-size: 1rem; 
 }
 
-.checkout-cart{
-    max-width: 70rem;
-    margin: 0 auto;
+.cart-header {
+  font-weight: 700;
 }
 
-.cart-header {
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  align-items: center;
-  font-weight: 700;
-  padding: 0.5rem 0;
-  border-bottom: 2px solid #330708;
-  color: #330708;
+.cart-header,
+.cart-item,
+.cart-total {
+    display: grid;
+    grid-template-columns: 1fr 6rem;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #330708;
+    box-sizing: border-box;
+}
+.checkout-cart {
+    max-width: 60rem; 
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.cart-total {
+    padding: 0.8rem 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: underline;
+
 }
 
 .cart-items {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .cart-item {
@@ -350,6 +370,7 @@ section{
 
   padding: 0.5rem 0rem;
   border-bottom: 1px solid #330708;
+
 }
 
 .item-details {
@@ -366,28 +387,31 @@ section{
   font-weight: 600;
   color: #330708;
 }
+.item-price,
+.header-price,
+.total-value {
+    justify-self: end;
+}
 
 .cart-item-image {
-  width: 9rem;
-  height: 6rem;
-  object-fit: cover; /*helped with correct image adjustment, looked up here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit */
-  border: 1px solid #330708;
+   width: 9rem;
+    height: 6rem;
+    min-width: 9rem;
+    min-height: 6rem;
+    object-fit: cover;
+    border: 1px solid #330708;
 }
 .cart-total {
-  display: grid;
-  grid-template-columns: 4fr 1fr; /* looked how to place elements in columns: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns*/
-  align-items: center;
-  padding: 0.8rem 0;
-  font-weight: 700;
-  font-size: 1.2rem;
-  margin-right: 1.5rem;
-  text-decoration: underline; 
+    padding: 0.8rem 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    border-bottom: none; /* used to not apply underline at the end of the container: https://www.udacity.com/blog/2021/08/how-to-apply-the-css-property-border-bottom.html */
 }
 
-.total-label{
-    justify-self: end;  
-    text-decoration: underline; 
-    margin-right: 0.5rem;
+.total-label {
+    justify-self: end;
+    text-decoration: underline;
 }
 
 img{
@@ -429,8 +453,6 @@ p a, li a {
   align-items: center;
   padding: 1rem 0;
 }
-
-
 
 
 .products {
