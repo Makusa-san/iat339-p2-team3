@@ -12,5 +12,5 @@ This Folder contains:
 
 Link to the website: https://makusa-san.github.io/iat339-p2-team3/index.html
 
-Link to the Project's Github: https://github.com/Makusa-san/iat339-p2-team3/tree/Max's-branch
+Link to the Project's Github: https://github.com/Makusa-san/iat339-p2-team3
 
