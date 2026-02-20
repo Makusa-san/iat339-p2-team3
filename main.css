@@ -18,6 +18,7 @@ body {
   margin: 0;
 }
 
+
 header{
   background: #AD4804;
   color: #F7D888;
@@ -114,10 +115,7 @@ p {
   outline: 1px solid #E60E0E;
 }
 
-.main-nav{
-  background: #AD4804;
-  display: inline-block;
-}
+
 
 .nav-link {
   background: #AD4804;
@@ -510,3 +508,125 @@ p a, li a {
   text-align: center;
 }
 
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-page {
+  padding:0;
+}
+
+.navbar {
+  position: fixed;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 4rem;
+  height: 98px;
+  box-sizing: border-box;
+
+  background: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.nav {
+  color: #F7D888;
+  text-decoration: none;
+  padding: 4rem;
+}
+
+.navbar.scrolled {
+  background-color: #AD4804; 
+}
+
+.cart {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.cart img {
+  height: 3.5rem;
+  transition: transform 0.2s ease;
+}
+
+.cart img:hover {
+  transform: scale(1.1);
+}
+
+/* TOP */
+
+.top {
+  position: relative;
+  height: 100vh;
+  background: url("img/main-page-cafe.png") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #FDFBD4;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.top-content {
+  max-width: 1200px;
+  padding: 0 4rem 6rem 4rem;
+}
+
+.top-content h1 {
+  font-size: 3rem;
+  font-family: "Arima Madurai", cursive;
+  margin-top: 20rem;
+  margin-bottom: 1.5rem;
+}
+
+.top-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}
+
+
+
+.canadian-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 4rem;
+  justify-content: flex-end;
+  font-weight: 600;
+}
+
+.canadian-badge img {
+  height: 30px;
+}
+
+.newsabout-section {
+  background: #FFFEF1;
+  padding: 6rem 2rem;
+  text-align: center;
+  margin-bottom: 50rem;
+}
+
+.newsabout-section h2 {
+  font-size: 2.5rem;
+  color: #330708;
+}
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page .navbar {
+  background:#AD4804;
+}
+
+.about-page {
+  padding: 0;
+}
