@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MaPastry – Canadian Bakery</title>
+
+  <link href="main.css" rel="stylesheet">
+  <link href="grids.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500;700;900&family=Charis+SIL:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="home-page">
+
+  <nav id="navbar" class="navbar">
+  <div class="logo">
+    <img src="img/mapastry-logo.png" alt="MaPastry Canadian Bakery logo">
+  </div>
+
+  <div class="main-nav">
+    <a href="about.html" class="nav">About</a>
+    <a href="product-list.html" class="nav">Menu</a>
+    <a href="#" class="nav">Contact & Location</a>
+  </div>
+
+   <div class="cart">
+    <a href="checkout.html">
+      <img src="img/cart-icon.png" alt="Shopping cart">
+    </a>
+  </div>
+
+</nav>
+
+  <!-- TOP SECTION -->
+  <section class="top">
+
+
+    <div class="top-content">
+      <h1>Satisfy your sweet tooth’s cravings...</h1>
+
+      <p>
+        MaPastry is a brand with a warm and welcoming vibe, very approachable, comforting,
+        offering a sense of familiarity to Canadians, while also remaining curious to people,
+        who explore Canadian culture. MaPastry values are warmth, comfort and preservation
+        of traditions.
+      </p>
+
+      <a href="product-list.html" class="form-button">
+        Order Now
+      </a>
+    </div>
+
+    <div class="canadian-badge">
+      <img src="img/maple-leaf.png" alt="Maple leaf icon">
+      <span>Proudly Canadian</span>
+    </div>
+
+  </section>
+
+
+  <!-- NEWS SECTION -->
+  <section class="news&about-section">
+    <h2>News/Updates</h2>
+  </section>
+<script>
+  const navbar = document.getElementById("navbar");
+  const heroSection = document.querySelector(".top");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > heroSection.offsetHeight - 100) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>
+
+</body>
+</html>
