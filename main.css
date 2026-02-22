@@ -455,6 +455,14 @@ p a, li a {
   padding: 1rem 0;
 }
 
+.section-divider {
+  border-top: 2px solid #AD4804;
+  margin: 5rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .products {
   display: grid;
@@ -627,4 +635,48 @@ p a, li a {
 
 .about-page {
   padding: 0;
+}
+
+/*
+  DETAILED VIEW PRODUCT PAGE
+*/
+.detailed-product-section .product-details .product-name {
+  margin-left: 1rem;
+}
+
+.detailed-product-section .product-details .product-cost {
+  font-size: 1.2rem;
+}
+
+.detailed-product-section h4{
+  font-family: "Charis SIL", serif;
+  color: #AD4804;
+}
+
+.detailed-product-section .product-card {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+.detailed-product-section .product-card img.product-image {
+  width: 18rem;
+  height: 15rem;
+  border: 1px solid #330708;
+}
+
+.detailed-product-section .product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.detailed-product-section .card-footer{
+  display: flex;
+  gap: 0.75rem; /* smaller gap between buttons; adjust as needed */
+  justify-content: flex-start; /* keeps items left-aligned */
+  align-items: center;
 }
