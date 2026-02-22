@@ -159,15 +159,16 @@ p {
 .image-link{
   display: inline-block;
   max-width: 100%;
+
 }
 
 .image-link img {
-  border: 2px solid #330708;
   width: 100%;
   height: auto;
   display: block;
   transition: 0.25s;
 }
+
 
 .form-elements input {
   border: 1px solid #787878;
@@ -241,6 +242,7 @@ input {
 .image-link:hover img, .image-link:focus img {
   transform: scale(1.02);
   filter: brightness(1.08) saturate(1.08); /*looked up for some effects when hovering over image: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/brightness */
+  border: 2px solid #330708;
 }
 
 /* 
@@ -262,7 +264,7 @@ section{
 
 .product-listing {
   width: 18.25rem;
-  height: 29rem;
+  
   max-width: 100%;
   background: white;
   border: 1.5px solid;
@@ -292,10 +294,6 @@ section{
   letter-spacing: 0.03rem;
 }
 
-.product-image {
-  width: 100%;
-  margin-bottom: 1.5rem;
-}
 
 .card-footer {
   display: flex;
