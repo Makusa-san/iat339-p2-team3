@@ -3,7 +3,7 @@
     <head>
 
         <meta charset="utf-8">
-        <title>Cake Products Section</title>
+        <title>Contacts and Submission</title>
 
         <link href="main.css" rel="stylesheet">
         <link href="grids.css" rel="stylesheet">
@@ -15,13 +15,36 @@
 
     <body class = "products-page">
         <header class = "products-page-header">
-            <a href="#">
-                    <img src="img/mapastry-logo.png" alt="A logo of the MaPastry cafe, containing following text: MaPastry Canadian Bakery" width = 150 height = 50 class = >
+            <a href="landingPage.html">
+                <img src="img/mapastry-logo.png" alt="A logo of the MaPastry cafe, containing following text: MaPastry Canadian Bakery" width = 150 height = 50 class = >
                 </a>
             <nav class = "main-nav">
                 <a href = "index.html" class = "nav-link">Style Guide</a>
+                <a href = "about.html" class = "nav-link">About Us</a>
                 <a href = "product-list.html" class = "nav-link">Products Listing Page</a>
                 <a href = "checkout.html" class = "nav-link">Checkout Page</a>
                 <a href = "contacts.html" class = "nav-link">Contacts</a>
           </nav>
         </header>
+
+        <h2 class = "page-header">Contacts Info and Feedback Form</h2>
+        <div class = "contact-section">
+        <p>Email: mapastry_bakery@gmail.com</p>
+        <p>Phone Number: + 1 (123) 456 - 78 - 90</p>
+        <p>We are looking forward to hear from you!  We value your opinion and looking forward to imporve our service, so we can satisfy all of our customers and bring the best experience.</p>
+
+        <div class = "form-elements">
+              <label for = "form-name">Full Name:</label>
+                <input type = "text" name = "form-name" id = "form-name" placeholder = "John Johnson">
+              <label for = "form-phone-num">Phone Number:</label>
+                <input type = "text" name = "form-phone-num" id = "form-phone-num" placeholder = "+ x(xxx)xxx-xx-xx">
+              <label for = "form-email">Email:</label>
+                <input type = "text" name = "form-email" id = "form-email" placeholder = "john_johnson@bakery.ca">
+              <label for = "form-feedback">Message:</label>
+                <textarea name="form-feedback" id="form-feedback" placeholder="Type feedback..."></textarea>
+        </div>
+        <a href="#" class="form-button">Submit Form</a>
+    </div>
+    
+    </body>
+</html>

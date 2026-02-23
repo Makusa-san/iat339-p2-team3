@@ -453,6 +453,7 @@ p a, li a {
   flex-direction: column;
   align-items: center;
   padding: 1rem 0;
+  margin-bottom: 0;
 }
 
 .section-divider {
@@ -579,6 +580,7 @@ p a, li a {
   flex-direction: column;
   justify-content: space-between;
   color: #FDFBD4;
+  
 }
 
 .logo img {
@@ -620,7 +622,6 @@ p a, li a {
 
 .newsabout-section {
   background: #FFFEF1;
-  padding: 6rem 2rem;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -690,6 +691,7 @@ p a, li a {
 
 .about-text p {
   line-height: 1.7;
+}
 /*
   DETAILED VIEW PRODUCT PAGE
 */
@@ -729,7 +731,40 @@ p a, li a {
 
 .detailed-product-section .card-footer{
   display: flex;
-  gap: 0.75rem; /* smaller gap between buttons; adjust as needed */
-  justify-content: flex-start; /* keeps items left-aligned */
+  gap: 0.75rem;
+  justify-content: flex-start; 
   align-items: center;
+}
+
+/*
+  CONTACTS AND FEEDBACK PAGE
+*/
+
+.products-page .form-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-section {
+  margin-left: 3rem; 
+}
+
+#form-feedback {
+  border: 1px solid #787878;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-family: "Charis SIL", serif;
+  transition: 0.2s;
+}
+
+#form-feedback:hover, #form-feedback:focus {
+  outline: none;
+  border: 1px solid #330708;
+  box-shadow: 0 0 0 2px rgba(51, 7, 8, 0.2);
+}
+
+.contact-section .form-button {
+  display: inline-block;
+  margin-top: 1.5rem;
 }
