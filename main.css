@@ -24,14 +24,12 @@ header{
   color: #F7D888;
   padding: 2rem;
   margin-bottom: 2rem;
-}
-
-header{
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap; /* used to adjust header elements placing: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap*/
   border-radius: 1.75rem;
 }
+
 
 .style-guide-page header nav {
   display: flex;
@@ -44,6 +42,7 @@ header nav a{
   text-decoration: none;
   padding: 0.6rem 1rem;
   transition: 0.2s;
+  margin-left: 1rem;
 }
 
 
@@ -142,7 +141,7 @@ p {
 }
 
 .button-nav:hover, .button-nav:focus, .button:hover, .button:focus, .product-link:hover, .product-link:focus {
-   background: #6E2606;
+  background: #6E2606;
   color: #FDFBD4; 
 }
 
@@ -150,21 +149,26 @@ p {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  max-width: 18rem;
+  max-width: 25rem;
+}
+
+.form-elements label {
+    font-weight: 600;
 }
 
 .image-link{
   display: inline-block;
   max-width: 100%;
+
 }
 
 .image-link img {
-  border: 2px solid #330708;
   width: 100%;
   height: auto;
   display: block;
   transition: 0.25s;
 }
+
 
 .form-elements input {
   border: 1px solid #787878;
@@ -227,9 +231,18 @@ input {
   box-shadow: 0 0 0 2px rgba(51, 7, 8, 0.2);
 }
 
+#form-post {
+    margin-bottom: 1rem;
+}
+
+.form-post{
+    margin-left: 15rem;
+}
+
 .image-link:hover img, .image-link:focus img {
   transform: scale(1.02);
   filter: brightness(1.08) saturate(1.08); /*looked up for some effects when hovering over image: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/brightness */
+  border: 2px solid #330708;
 }
 
 /* 
@@ -250,28 +263,37 @@ section{
 
 
 .product-listing {
-  max-width: 19.25rem;
+  width: 18.25rem;
+  
+  max-width: 100%;
   background: white;
   border: 1.5px solid;
   border-color: #330708;
   text-align: center;
- 
 }
+
 
 .product-listing h4, .product-allergens, .product-description {
  text-align: left;
  margin-left: 1rem;
+ color: #AD4804;
 }
 
+
+.product-listing h4{
+ font-family: "Charis SIL", serif;
+}
+.product-description{
+ font-weight: 200;
+}
 .product-allergens{
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
   text-decoration: underline;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
 }
 
-.product-image {
-  width: 100%;
-  margin-bottom: 1.5rem;
-}
 
 .card-footer {
   display: flex;
@@ -308,18 +330,48 @@ section{
   font-size: 1rem; 
 }
 
+.cart-header {
+  font-weight: 700;
+}
+
+.cart-header,
+.cart-item,
+.cart-total {
+    display: grid;
+    grid-template-columns: 1fr 6rem;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #330708;
+    box-sizing: border-box;
+}
+.checkout-cart {
+    max-width: 70rem; 
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.cart-total {
+    padding: 0.8rem 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: underline;
+
+}
+
 .cart-items {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .cart-item {
   display: grid;
-  grid-template-columns: 1fr auto; /* looked how to place elements in columns: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns*/
+  grid-template-columns: 4fr 1fr; /* looked how to place elements in columns: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns*/
   align-items: center;
 
   padding: 0.5rem 0rem;
   border-bottom: 1px solid #330708;
+
 }
 
 .item-details {
@@ -329,27 +381,38 @@ section{
 }
 
 .item-name{
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .item-price {
   font-weight: 600;
-  color: #734217;
+  color: #330708;
+}
+.item-price,
+.header-price,
+.total-value {
+    justify-self: end;
 }
 
 .cart-item-image {
-  width: 6rem;
-  height: 6rem;
-  object-fit: cover; /*helped with correct image adjustment, looked up here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit */
-  border: 1px solid #330708;
+   width: 9rem;
+    height: 6rem;
+    min-width: 9rem;
+    min-height: 6rem;
+    object-fit: cover;
+    border: 1px solid #330708;
 }
 .cart-total {
-  display: grid;
-  grid-template-columns: 1fr auto; /* looked how to place elements in columns: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-columns*/
-  align-items: center;
-  padding: 0.8rem 0;
-  font-weight: 700;
-  font-size: 1.2rem;
+    padding: 0.8rem 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    border-bottom: none; /* used to not apply underline at the end of the container: https://www.udacity.com/blog/2021/08/how-to-apply-the-css-property-border-bottom.html */
+}
+
+.total-label {
+    justify-self: end;
+    text-decoration: underline;
 }
 
 img{
@@ -392,7 +455,13 @@ p a, li a {
   padding: 1rem 0;
 }
 
-
+.section-divider {
+  border-top: 2px solid #AD4804;
+  margin: 5rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 .products {
@@ -434,8 +503,12 @@ p a, li a {
   margin: 0 auto;
 }
 
+/*
+  CHECKOUT PAGE STYLING
+*/
+
 .checkout-cart h2, .payment-form h2 {
-  font-size: 1.5rem;
+
   font-family: 'Arima Madurai', cursive;
   margin-top: 0.4rem;
   text-align: center;
@@ -617,4 +690,46 @@ p a, li a {
 
 .about-text p {
   line-height: 1.7;
+/*
+  DETAILED VIEW PRODUCT PAGE
+*/
+.detailed-product-section .product-details .product-name {
+  margin-left: 1rem;
+}
+
+.detailed-product-section .product-details .product-cost {
+  font-size: 1.2rem;
+}
+
+.detailed-product-section h4{
+  font-family: "Charis SIL", serif;
+  color: #AD4804;
+}
+
+.detailed-product-section .product-card {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+.detailed-product-section .product-card img.product-image {
+  width: 18rem;
+  height: 15rem;
+  border: 1px solid #330708;
+}
+
+.detailed-product-section .product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.detailed-product-section .card-footer{
+  display: flex;
+  gap: 0.75rem; /* smaller gap between buttons; adjust as needed */
+  justify-content: flex-start; /* keeps items left-aligned */
+  align-items: center;
 }
