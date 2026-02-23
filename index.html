@@ -4,12 +4,13 @@
   <head>
 
     <meta charset="utf-8">
-    <title>P01 - Style Guide Template</title>
+    <title>P02 - Style Guide Template</title>
 
     <link href="main.css" rel="stylesheet">
     <link href="grids.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <!--used fonts-->
 
   </head>
@@ -17,7 +18,7 @@
   <body class = "style-guide-page">
 
     <header>
-      <h1>P01 - Style Guide Template</h1>
+      <h1>P02 - Style Guide Template</h1>
 
     
       <nav>        
@@ -116,6 +117,7 @@
         Add Utensils
         </label>
 
+        
            
         <!--looked up here about radio type: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio-->
       </section>
@@ -241,11 +243,13 @@
 
         <h4>Rendered element:</h4>
         <div class="product-listing">
-          <a href="#">
-            <img src="img/maple-cake.jpg" alt="A delicious slice of a cheesecake." class="product-image">
+          <a href="#" class = "image-link">
+            <img src="img/maple-cake.jpg" alt="A delicious slice of a cheesecake.">
           </a>
-          <h4 class="product-name">Maple Syrup Cheesecake</h4>
-          <p class="product-allergens">Contains: Dairy, Eggs, Gluten, Nuts</p>
+          <div class = "product-info">
+            <h4 class="product-name">Maple Syrup Cheesecake</h4>
+            <p class="product-allergens">Contains: Dairy, Eggs, Gluten, Nuts</p>
+          </div>
           <p class="product-description">A rich and creamy cheesecake with real maple syrup topping.</p>
           <div class = "card-footer">
             <p class="product-cost">$6.35</p>
@@ -361,6 +365,10 @@
           <div class="checkout-cart">
             <h4>Your Cart</h4>
             <ul class="cart-items">
+              <li class = "cart-header">
+                <div class = "header-product">Product</div>
+                <div class = "header-price">Price</div>
+              </li>
               <li class="cart-item">
                 <div class="item-details">
                   <img src="img/maple-cake.jpg" alt="Maple Syrup Cheesecake" class="cart-item-image"> <!--cheesecake image: https://www.google.com/search?sca_esv=449808707ab54592&rlz=1C5CHFA_enRU907RU908&sxsrf=ANbL-n4_2D99c-ySaFGrkwpUbXqF6I4DnA:1769443565425&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp9lEhFAN_4ain3HSNQWw-mCdteDOdu-whizqull19J697Hd2DjFbIIkobt5MxzWRrbQzH3_BR0OTUD3HedzAmCP3hjuTMJT6f6QsidAo8PcZbRUfjd37k2TVsaGn2-AFP1raUx1RsslEKQg4GU355hj3-DpxvTGIQL5eNoRPHcNl1EwfTXZBdG1ewbfq_hCqn_nk0sQ&q=maple+cheesecake&sa=X&sqi=2&ved=2ahUKEwj3gav5yqmSAxVMEjQIHQCUFR4QtKgLegQIGhAB&biw=1422&bih=849&dpr=2&aic=0#vhid=mEJMOMpN0LvPjM&vssid=mosaic-->
@@ -443,7 +451,10 @@
         Together, these componenets communicate warmth, comfort, and cultural identity, giving a pleasing experience for both big groups of potential customers.
       </p>
 
-       <img src = img/main-page-cafe.png class = image-link width = 550 alt="main page of the MaPastry's website">
+       <img src = img/landing-page-idea1.png class = image-link width = 550 alt="main page of the MaPastry's website">
+       <img src = img/landing-page-idea2.png class = image-link width = 550 alt="a second idea for main page of the MaPastry's website">
+       <img src = img/canadian-dishes.png class = image-link width = 550 alt="a picture of pastry dishes: donut, croissants, pancakes and maple leaf">
+       <img src = img/landing-page-image1.png class = image-link width = 550 alt="a drawing of the bakery with pastry goods and bottle of maple syrup">
        <img src="img/maple-cake.jpg" alt="Maple Syrup Cheesecake" width = 170 height = 170>
        <img src="img/latte.jpeg" alt="Walnut Oat Latte" width = 170 height = 170>
        <img src="img/cookie.jpg" alt="Sugar Cookie" width = 170 height = 170>
@@ -466,6 +477,8 @@
         <li>Google. (n.d.). <strong>Arima Madurai & Mulish [Web fonts]</strong>. Google Fonts. Retrieved February 2, 2026, from  <a href="https://fonts.google.com/x" class = "text-link">https://fonts.google.com/</a>.</li>
         <li>Google. (n.d.). <strong>Charis SIL [Web font]</strong>. Google Fonts. Retrieved February 2, 2026, from<a href="https://fonts.google.com/" class="text-link">https://fonts.google.com/</a>.</li>
         <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans" class = "text-link">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Adobe Firefly. (2026). AI-generated image of a cafe with pastry and maple syrup bottles [AI‑generated image]. Adobe Firefly. https://firefly.adobe.com/generate/image</li>
+        <li>Adobe Firefly. (2026). AI-generated image of bakery pastry, such as donut, croissant, pancakes and maple leaft [AI‑generated image]. Adobe Firefly. https://firefly.adobe.com/generate/image</li>
       </ul>
 
     </section>
