@@ -114,10 +114,10 @@
 <!-- I found the basics of javascript for scrolling nav bar from this website: https://www.w3schools.com/js/js_events.asp -->
 <script>
   const navbar = document.getElementById("navbar");
-  const heroSection = document.querySelector(".top");
+  const topSection = document.querySelector(".top");
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > heroSection.offsetHeight - 100) {
+    if (window.scrollY > topSection.offsetHeight - 100) {
       navbar.classList.add("scrolled");
     } else {
       navbar.classList.remove("scrolled");
