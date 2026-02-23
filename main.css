@@ -459,7 +459,7 @@ p a, li a {
   align-items: center;
 
   padding: 0 4rem;
-  height: 98px;
+  height: 6.125rem;
   box-sizing: border-box;
 
   background: transparent;
@@ -471,6 +471,10 @@ p a, li a {
   color: #F7D888;
   text-decoration: none;
   padding: 4rem;
+}
+
+.nav:hover {
+   color: #FDFBD4;
 }
 
 .navbar.scrolled {
@@ -496,8 +500,8 @@ p a, li a {
 
 .top {
   position: relative;
-  height: 100vh;
-  background: url("img/main-page-cafe.png") center/cover;
+  height: 100vh; /* I read about it here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length#vh */
+  background: url("img/main-page-cafe.png") center/cover; /* I read about it here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/url_function */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -505,11 +509,11 @@ p a, li a {
 }
 
 .logo img {
-  height: 50px;
+  height: 3.125rem;
 }
 
 .top-content {
-  max-width: 1200px;
+  max-width: 75rem;
   padding: 0 4rem 6rem 4rem;
 }
 
@@ -538,14 +542,14 @@ p a, li a {
 }
 
 .canadian-badge img {
-  height: 30px;
+  height: 1.875rem;
 }
 
 .newsabout-section {
   background: #FFFEF1;
   padding: 6rem 2rem;
   text-align: center;
-  margin-bottom: 50rem;
+  margin-bottom: 2rem;
 }
 
 .newsabout-section h2 {
@@ -562,4 +566,55 @@ p a, li a {
 
 .about-page {
   padding: 0;
+}
+
+.news-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2rem;
+  padding: 4rem;
+  max-width: 87.5rem;
+  margin: 0 auto;
+}
+
+
+.news-card {
+  text-align: center;
+}
+
+.news-card h3 {
+  margin-bottom: 1rem;
+}
+
+.news-card p {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.about-section {
+  padding: 2rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  gap: 3rem;
+}
+
+.about-container img {
+  width: 22rem;
+  height: auto;
+}
+
+.about-text {
+  max-width: 62.5rem;
+}
+
+.about-text h2 {
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  line-height: 1.7;
 }
