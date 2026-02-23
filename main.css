@@ -156,17 +156,17 @@ p {
     font-weight: 600;
 }
 
-.image-link{
-  display: inline-block;
-  max-width: 100%;
-
+.image-link {
+  display: block;
+  width: 18rem;
+  height: 12rem;
 }
 
 .image-link img {
   width: 100%;
-  height: auto;
-  display: block;
-  transition: 0.25s;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s;
 }
 
 
@@ -453,6 +453,7 @@ p a, li a {
   flex-direction: column;
   align-items: center;
   padding: 1rem 0;
+  margin-bottom: 0;
 }
 
 .section-divider {
@@ -472,9 +473,11 @@ p a, li a {
   align-items: start;
 }
 
-.products-page .main-nav {
+.products-page-header .main-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .products-page h2 {
@@ -579,6 +582,7 @@ p a, li a {
   flex-direction: column;
   justify-content: space-between;
   color: #FDFBD4;
+  
 }
 
 .logo img {
@@ -620,7 +624,6 @@ p a, li a {
 
 .newsabout-section {
   background: #FFFEF1;
-  padding: 6rem 2rem;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -650,6 +653,18 @@ p a, li a {
   margin: 0 auto;
 }
 
+@media (max-width: 56.25rem) {
+  .news-columns {
+    grid-template-columns: 1fr;
+  }
+  .top-content {
+    padding: 0rem 1.5rem;
+  }
+  .canadian-badge {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
 
 .news-card {
   text-align: center;
@@ -692,7 +707,12 @@ p a, li a {
   line-height: 1.7;
 }
 
-
+@media (max-width: 56.25rem) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 /*
   DETAILED VIEW PRODUCT PAGE
 */
@@ -718,9 +738,11 @@ p a, li a {
 }
 
 .detailed-product-section .product-card img.product-image {
-  width: 18rem;
+  width: 20rem;
   height: 15rem;
+  object-fit: cover; 
   border: 1px solid #330708;
+  display: block;
 }
 
 .detailed-product-section .product-details {
@@ -732,7 +754,56 @@ p a, li a {
 
 .detailed-product-section .card-footer{
   display: flex;
-  gap: 0.75rem; /* smaller gap between buttons; adjust as needed */
-  justify-content: flex-start; /* keeps items left-aligned */
+  gap: 0.75rem;
+  justify-content: flex-start; 
   align-items: center;
+}
+
+@media (max-width: 48rem) {
+  .detailed-product-section .product-card  {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .detailed-product-section .card-footer {
+    flex-direction: column; 
+  }
+
+  .detailed-product-section .card-footer a.form-button {
+    width: 60%; 
+  }
+}
+
+/*
+  CONTACTS AND FEEDBACK PAGE
+*/
+
+.products-page .form-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-section {
+  margin-left: 3rem; 
+}
+
+#form-feedback {
+  border: 1px solid #787878;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-family: "Charis SIL", serif;
+  transition: 0.2s;
+}
+
+#form-feedback:hover, #form-feedback:focus {
+  outline: none;
+  border: 1px solid #330708;
+  box-shadow: 0 0 0 2px rgba(51, 7, 8, 0.2);
+}
+
+.contact-section .form-button {
+  display: inline-block;
+  margin-top: 1.5rem;
 }
