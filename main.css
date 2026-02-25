@@ -546,11 +546,13 @@ p a, li a {
 .nav {
   color: #F7D888;
   text-decoration: none;
-  padding: 4rem;
+  padding: 0rem 4rem;
+  transition: 0.3s ease;
 }
 
 .nav:hover {
-   color: #FDFBD4;
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255);
+  color: #FDFBD4;
 }
 
 .navbar.scrolled {
@@ -565,11 +567,22 @@ p a, li a {
 
 .cart img {
   height: 3.5rem;
-  transition: transform 0.2s ease;
 }
 
-.cart img:hover {
-  transform: scale(1.1);
+
+.icon .hover {
+  position: absolute;   
+  top: 0;
+  right: 2;
+  opacity: 0;
+}
+
+.icon:hover .hover {
+  opacity: 1;
+}
+
+.icon:hover .default {
+  opacity: 0;
 }
 
 /* TOP */
@@ -616,6 +629,7 @@ p a, li a {
   padding: 2rem 4rem;
   justify-content: flex-end;
   font-weight: 600;
+  color: #F7D888; 
 }
 
 .canadian-badge img {
@@ -626,11 +640,35 @@ p a, li a {
   background: #FFFEF1;
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 10rem;
 }
 
 .newsabout-section h2 {
   font-size: 2.5rem;
   color: #330708;
+}
+
+.section-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  gap: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+
+
+  font-size: 1rem;
+  color: #330708; 
+}
+
+.section-subtitle::before,
+.section-subtitle::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #330708; 
 }
 /* =========================
    ABOUT PAGE
@@ -638,12 +676,58 @@ p a, li a {
 
 .about-page .navbar {
   background:#AD4804;
+  position: absolute;   
+  top: 0;
+
 }
 
-.about-page {
+.about-page{
   padding: 0;
+
 }
 
+.bgOrange {
+  background: #AD4804;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 10rem;
+}
+
+
+.bgOrange h2 {
+  font-size: 2.5rem;
+  color: #FFDE87;
+}
+
+.bgOrange p {
+  color: #FFDE87;
+}
+
+.orangeSection-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+
+
+  font-size: 1rem;
+  color: #FFDE87; 
+}
+
+.orangeSection-subtitle::before,
+.orangeSection-subtitle::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #FFDE87; 
+}
+
+/* =========================
+   NEWS/UPDATES SECTION
+========================= */
 .news-columns {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
