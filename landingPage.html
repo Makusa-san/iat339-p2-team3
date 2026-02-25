@@ -11,18 +11,40 @@
 
 <body class="home-page">
 
-  <header class = "products-page-header">
-    <a href="landingPage.html">
-      <img src="img/mapastry-logo.png" alt="A logo of the MaPastry cafe, containing following text: MaPastry Canadian Bakery" width = 150 height = 50 class = >
+  <nav id="navbar" class="navbar">
+  <div class="logo">
+<nav>
+      <a href = "landingPage.html" class = "logo">
+        <img src="img/mapastry-logo.png" alt="MaPastry Canadian Bakery logo">
+      </a>
+      </nav>
+  </div>
+
+  <div class="main-nav">
+    <a href="about.html" class="nav">About</a>
+    <a href="product-list.html" class="nav">Menu</a>
+    <a href="#" class="nav">Contact & Location</a>
+  </div>
+
+   <div class="cart">
+    <a href="checkout.html" class = "icon">
+      <img src="img/cart-icon.png" class = "default" alt="Shopping cart">
+      <img src="img/cart-hover.png" class="hover">
     </a>
-    <nav class = "main-nav">
-      <a href = "index.html" class = "nav-link">Style Guide</a>
-      <a href = "about.html" class = "nav-link">About Us</a>
-      <a href = "product-list.html" class = "nav-link">Products Listing Page</a>
-      <a href = "checkout.html" class = "nav-link">Checkout Page</a>
-      <a href = "contacts.html" class = "nav-link">Contacts</a>
-    </nav>
-  </header>
+
+    <a href="#" class = "icon">
+      <img src="img/favorites.png" class = "default" alt="Favorites icon">
+      <img src="img/fav-hover.png" class="hover">
+    </a>
+
+  </div>
+
+  
+
+
+
+</nav>
+
 
   <!-- TOP SECTION -->
   <section class="top">
@@ -48,31 +70,33 @@
       <span>Proudly Canadian</span>
     </div>
 
+    
+
   </section>
 
 
   <!-- NEWS SECTION -->
   <section class="newsabout-section">
     <h2>News/Updates</h2>
+
+    <p class="section-subtitle">
+  From seasonal flavors to special events, stay up to date with the latest sweet stories from our maple kitchen
+</p>
   </section>
 
 <section class="news-columns">
 
   <div class="news-card">
     <h3>Introducing Our Spring Maple Collection</h3>
-    <a href="#" class="image-link">
       <img src="img/maplePastry1.png" alt="Maple dessert">
-    </a>
     <p>
-        We’re excited to launch our new seasonal Maple Collection, inspired by the rich sweetness of Canadian maple syrup. From flaky maple croissants to our signature maple pecan danishes, each pastry is handcrafted daily using locally sourced ingredients. Available for a limited time only!
+        We’re excited to launch our new seasonal Maple Collection, inspired by the rich sweetness of Canadian maple syrup. From flaky maple croissants to our signature maple pecan danishes!
     </p>
   </div>
 
   <div class="news-card">
     <h3>Freshly Baked Every Morning</h3>
-    <a href="#" class="image-link">
       <img src="img/maplePastry2.png" alt="Fresh baked pastries">
-    </a>
     <p>
        Our ovens start early so your favorites are ready fresh every morning. Stop by to enjoy warm pastries, buttery layers, and the comforting aroma of maple in every bite. Quality and freshness are always our top priorities.
     </p>
@@ -80,9 +104,7 @@
 
   <div class="news-card">
     <h3>Now Serving Specialty Coffee</h3>
-    <a href="#" class="image-link">
       <img src="img/maplePastry3.png" alt="Maple Syrup pastries">
-    </a>
     <p>
       Great pastries deserve great coffee. We’ve partnered with a local roaster to bring you smooth, rich espresso and handcrafted lattes — the perfect pairing for your maple treat.
     </p>
@@ -90,15 +112,29 @@
 
   <div class="news-card">
     <h3>Holiday Pre-Orders Are Open</h3>
-    <a href="#" class="image-link">
       <img src="img/maplePastry4.png" alt="Maple Syrup pastries">
-    </a>
     <p>
       Planning a gathering? Our maple tarts, pastry boxes, and custom dessert trays are now available for pre-order. Let us make your celebrations sweeter!
     </p>
   </div>
 
 </section>
+
+
+
+<script>
+  const navbar = document.getElementById("navbar");
+  const heroSection = document.querySelector(".top");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > heroSection.offsetHeight - 100) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>
+
 
 </body>
 </html>
