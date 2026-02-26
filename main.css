@@ -96,6 +96,101 @@ p {
   margin-top: 0;
 }
 
+.web-footer{
+  background: #AD4804;
+  padding: 3rem 2rem 1.5rem 2rem;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.footer-column-first, .footer-column-second, .footer-column-third, .footer-column-fourth {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column-first{
+  gap: 0.6rem;
+}
+
+.footer-column-second{
+  gap: 1.75rem;
+  white-space: nowrap;
+}
+
+.footer-column-third{
+  gap: 1.75rem;
+  white-space: nowrap;
+}
+
+.footer-column-fourth{
+  gap: 1.5rem;
+}
+
+.footer-column-fourth .form-button {
+  align-self: flex-start;
+}
+
+.footer-column-second h4 {
+  margin-left: 3.9rem;
+}
+
+.footer-column-third h4 {
+  margin-left: 3.9rem;
+}
+
+@media (max-width: 60rem) {
+
+  .footer-column-first img{
+    margin-left: 0.5rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-column-first {
+    grid-column: 1 / -1;
+    align-items: center;
+  }
+
+  .footer-column-second{
+    align-items: center;
+  }
+
+  .footer-column-third{
+    align-items: center;
+  }
+
+  .footer-column-fourth {
+    grid-column: 1 / -1; 
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .footer-column-fourth .form-button {
+    align-self: center;
+  }
+
+  .footer-column-second h4 {
+    margin-left: 0;
+  }
+
+  .footer-column-third h4 {
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 20rem) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -431,6 +526,11 @@ p a, li a {
   PRODUCTS LISTING PAGE STYLING
 */
 
+.products-page .navbar {
+  background:#AD4804;
+  position: sticky;
+  top: 0
+}
 
 .mapastry-logo{
     display: flex;
@@ -678,7 +778,6 @@ p a, li a {
   background:#AD4804;
   position: absolute;   
   top: 0;
-
 }
 
 .about-page{

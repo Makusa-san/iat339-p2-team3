@@ -14,18 +14,35 @@
     </head>
 
     <body class = "products-page">
-        <header class = "products-page-header">
-            <a href="landingPage.html">
-                <img src="img/mapastry-logo.png" alt="A logo of the MaPastry cafe, containing following text: MaPastry Canadian Bakery" width = 150 height = 50 class = >
-                </a>
-            <nav class = "main-nav">
-                <a href = "index.html" class = "nav-link">Style Guide</a>
-                <a href = "about.html" class = "nav-link">About Us</a>
-                <a href = "product-list.html" class = "nav-link">Products Listing Page</a>
-                <a href = "checkout.html" class = "nav-link">Checkout Page</a>
-                <a href = "contacts.html" class = "nav-link">Contacts</a>
-          </nav>
-        </header>
+        <nav id="navbar" class="navbar">
+  <div class="logo">
+<nav>
+      <a href = "landingPage.html" class = "logo">
+        <img src="img/mapastry-logo.png" alt="MaPastry Canadian Bakery logo">
+      </a>
+      </nav>
+  </div>
+
+  <div class="main-nav">
+    <a href="about.html" class="nav">About</a>
+    <a href="product-list.html" class="nav">Menu</a>
+    <a href="contacts.html" class="nav">Contact & Location</a>
+  </div>
+
+   <div class="cart">
+    <a href="checkout.html" class = "icon">
+      <img src="img/cart-icon.png" class = "default" alt="Shopping cart">
+      <img src="img/cart-hover.png" class="hover">
+    </a>
+
+    <a href="#" class = "icon">
+      <img src="img/favorites.png" class = "default" alt="Favorites icon">
+      <img src="img/fav-hover.png" class="hover">
+    </a>
+
+  </div>
+
+</nav>
         <h2 class = "page-header">Product Info</h2>
         <hr class = "section-divider"> <!-- found here how to draw lines on the page: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr-->
 
@@ -44,6 +61,42 @@
             </div>
         </div>
          <hr class = "section-divider">
+         <footer class = "web-footer">
+        <div class = "footer-container">
+          <div class = "footer-column-first">
+            <img src="img/mapastry-logo.png" alt="MaPastry Canadian Bakery logo" width = 150 height = 50>
+            <h4>Information</h4>
+            <p>Location: Caramel Avenue 487, BC</p>
+            <p>Opening Hours: Mon - Sun 09:00 - 19:00</p>
+            <p>Email: mapastry_bakery@gmail.com</p>
+            <p>Phone: +1(234) 567-78-89</p>
+          </div>
+          <div class = "footer-column-second">
+            <h4>Pages</h4>
+            <a href="landingPage.html" class="nav">Main Page</a>
+            <a href="about.html" class="nav">About</a>
+            <a href="product-list.html" class="nav">Menu</a>
+            <a href="checkout.html" class="nav">Checkout</a>
+            <a href="contacts.html" class="nav">Contacts</a>
+          </div>
+          <div class = "footer-column-third">
+            <h4>Documents</h4>
+            <a href="https://github.com/Makusa-san/iat339-p2-team3" class = "nav">GitHub</a>
+            <a href="https://makusa-san.github.io/iat339-p2-team3/index.html" class = "nav">Style Guide</a>
+            <a href="https://makusa-san.github.io/iat339-p2-team3/index.html#citations" class = "nav">Citations</a>
+            <a href = "#" class = "nav">Terms of Use</a>
+            <a href = "#" class = "nav">Privacy Policy</a>
+          </div>
+          <div class = "footer-column-fourth">
+            <div class = "form-elements">
+              <label for = "form-name">Subscribe to our Newsletter</label>
+                <input type = "text" name = "form-name" id = "form-name" placeholder = "example@gmail.com">  
+            </div>
+            <a href="#" class="form-button">Submit</a>
+            <p>© 2026 MaPastry All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
     </body>
 </html>
     
