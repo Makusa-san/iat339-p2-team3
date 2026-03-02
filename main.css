@@ -253,8 +253,8 @@ p {
 
 .image-link {
   display: block;
-  width: 18rem;
-  height: 12rem;
+  max-width: 18rem;
+  max-height: 12rem;
 }
 
 .image-link img {
@@ -292,8 +292,8 @@ input {
 
 /*learnt how to style custom radio buttons here: https://gist.github.com/Cutcopy/3fce01b4e66c4663ef27*/
 .custom-radio {
-  width: 18px;
-  height: 18px;
+  max-width: 18px;
+  max-height: 18px;
   border: 2px solid #787878;
   border-radius: 50%;
   position: relative;
@@ -309,8 +309,8 @@ input {
 
 .radio input:checked + .custom-radio::after {
   content: "";
-  width: 10px;
-  height: 10px;
+  max-width: 10px;
+  max-height: 10px;
   background: #330708;
   border-radius: 50%;
   position: absolute;
@@ -358,7 +358,7 @@ section{
 
 
 .product-listing {
-  width: 18.25rem;
+  max-width: 18.25rem;
   
   max-width: 100%;
   background: white;
@@ -490,10 +490,10 @@ section{
 }
 
 .cart-item-image {
-   width: 9rem;
-    height: 6rem;
-    min-width: 9rem;
-    min-height: 6rem;
+   max-width: 9rem;
+    max-height: 6rem;
+    min-width: 6rem;
+    min-height: 3rem;
     object-fit: cover;
     border: 1px solid #330708;
 }
@@ -669,12 +669,18 @@ p a, li a {
   height: 3.5rem;
 }
 
+.icon {
+  position: relative; 
+  display: inline-flex;
+  align-items: center;
+}
 
 .icon .hover {
   position: absolute;   
   top: 0;
   right: 2;
   opacity: 0;
+   transition: opacity 0.2s ease;
 }
 
 .icon:hover .hover {
@@ -812,7 +818,7 @@ p a, li a {
 
 .news-columns img {
   width: 100%;
-  height: 12rem;
+  max-height: 12rem;
   object-fit: cover;
 }
 
@@ -884,7 +890,7 @@ p a, li a {
 
 .values-columns img {
   max-width: 100%;
-  height: 15rem;
+  max-height: 15rem;
   margin: 0 auto;
 }
 
@@ -954,10 +960,11 @@ p a, li a {
 }
 
 .quote-author h3::before {
-  content: "";
+ content: "";
   position: absolute;
-  left: 24rem;
   top: 50%;
+  left: 60%;
+  margin-left: 1rem;
   width: 3rem;
   height: 1px;
   background: #330708;
@@ -971,7 +978,7 @@ p a, li a {
 }
 
 .staff-image img {
-  width: 15rem;
+  max-width: 15rem;
   height: auto;
 }
 
@@ -987,6 +994,48 @@ p a, li a {
   margin: 0 auto;
 }
 
+@media (max-width: 61.125rem) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 1.5rem;
+    align-items: stretch; 
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .cart {
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    height: auto;
+    align-items: center;
+  }
+
+  .cart img {
+    height: 2.75rem;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5rem;
+    gap: 1.5rem;
+  }
+
+  .nav {
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+  }
+
+}
+
+
 @media (max-width: 56.25rem) {
   .news-columns {
     grid-template-columns: 1fr;
@@ -998,6 +1047,17 @@ p a, li a {
     justify-content: center;
     gap: 0.5rem;
   }
+
+  .quote-author h3::before {
+ content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 1rem;
+  width: 3rem;
+  height: 1px;
+  background: #330708;
+}
 }
 
 .news-card {
@@ -1022,7 +1082,7 @@ p a, li a {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 10rem;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
@@ -1075,8 +1135,8 @@ p a, li a {
 }
 
 .detailed-product-section .product-card img.product-image {
-  width: 20rem;
-  height: 15rem;
+  max-width: 20rem;
+  max-height: 15rem;
   object-fit: cover; 
   border: 1px solid #330708;
   display: block;
@@ -1110,7 +1170,76 @@ p a, li a {
   .detailed-product-section .card-footer a.form-button {
     width: 60%; 
   }
+
+
+  .about-container {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+
+  .about-container img{
+    max-width: 70%;
+      height: auto;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .about-text h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .news-card{
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+      align-items: center;
+    grid-template-columns: 1fr;
+  }
+  .news-card img{
+    max-width: 70%;
+    height: auto;
+  }
+  .values-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+   .staff-content {
+    flex-direction: column;
+  }
+
+  .staff-image {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+
+  .quote-side {
+    text-align: center;
+  }
+
+  .quote-author h3,
+  .quote-author p {
+    justify-content: center;
+  }
+
+  .quote-author h3::before {
+ content: "";
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  margin-left: 1rem;
+  width: 3rem;
+  height: 1px;
+  background: #330708;
 }
+
+}
+
+
 
 /*
   CONTACTS AND FEEDBACK PAGE
