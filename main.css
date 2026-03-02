@@ -1142,10 +1142,7 @@ p a, li a {
   font-size: 1.2rem;
 }
 
-.detailed-product-section h4{
-  font-family: "Charis SIL", serif;
-  color: #AD4804;
-}
+
 
 .detailed-product-section .product-card {
   display: flex;
