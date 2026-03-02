@@ -1116,31 +1116,50 @@ p a, li a {
   CONTACTS AND FEEDBACK PAGE
 */
 
-.products-page .form-elements {
+.contact-section {
+  max-width: 70rem;
+  margin: 0 auto 4rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 2rem;
 }
 
-.contact-section {
-  margin-left: 3rem; 
+.contact-section .form-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;  /*used to stretch from elements size to size of container: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/align-items*/
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  gap: 0.75rem;
 }
 
-#form-feedback {
-  border: 1px solid #787878;
-  border-radius: 0.25rem;
+.contact-section .form-elements label {
+  text-align: left;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.contact-section .form-elements input,
+.contact-section .form-elements textarea {
+  width: 100%;
   padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #787878;
   font-family: "Charis SIL", serif;
-  transition: 0.2s;
+  box-sizing: border-box;
 }
 
-#form-feedback:hover, #form-feedback:focus {
+.contact-section .form-elements input:focus,
+.contact-section .form-elements textarea:focus {
   outline: none;
   border: 1px solid #330708;
   box-shadow: 0 0 0 2px rgba(51, 7, 8, 0.2);
 }
 
 .contact-section .form-button {
+  align-self: center;
+  margin-top: 3rem;
   display: inline-block;
-  margin-top: 1.5rem;
 }
