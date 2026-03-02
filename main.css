@@ -1156,8 +1156,8 @@ p a, li a {
 }
 
 .detailed-product-section .product-card img.product-image {
-  max-width: 20rem;
-  max-height: 15rem;
+  width: 20rem;
+  height: 15rem;
   object-fit: cover; 
   border: 1px solid #330708;
   display: block;
@@ -1177,6 +1177,19 @@ p a, li a {
   align-items: center;
 }
 
+.recommended-section .product-listing .card-footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 1rem;
+}
+
+.recommended-section h3 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 48rem) {
   .detailed-product-section .product-card  {
     flex-direction: column;
@@ -1184,9 +1197,7 @@ p a, li a {
     text-align: center;
   }
 
-  .detailed-product-section .card-footer {
-    flex-direction: column; 
-  }
+  
 
   .detailed-product-section .card-footer a.form-button {
     width: 60%; 
