@@ -247,14 +247,15 @@ p {
   max-width: 25rem;
 }
 
+
 .form-elements label {
     font-weight: 600;
 }
 
 .image-link {
   display: block;
-  max-width: 18rem;
-  max-height: 12rem;
+  width: 18rem;
+  height: 12rem;
 }
 
 .image-link img {
@@ -292,8 +293,8 @@ input {
 
 /*learnt how to style custom radio buttons here: https://gist.github.com/Cutcopy/3fce01b4e66c4663ef27*/
 .custom-radio {
-  max-width: 18px;
-  max-height: 18px;
+  width: 18px;
+  height: 18px;
   border: 2px solid #787878;
   border-radius: 50%;
   position: relative;
@@ -309,8 +310,8 @@ input {
 
 .radio input:checked + .custom-radio::after {
   content: "";
-  max-width: 10px;
-  max-height: 10px;
+  width: 10px;
+  height: 10px;
   background: #330708;
   border-radius: 50%;
   position: absolute;
@@ -358,8 +359,7 @@ section{
 
 
 .product-listing {
-  max-width: 18.25rem;
-  
+  width: 18.25rem;
   max-width: 100%;
   background: white;
   border: 1.5px solid;
@@ -490,10 +490,10 @@ section{
 }
 
 .cart-item-image {
-   max-width: 9rem;
-    max-height: 6rem;
-    min-width: 6rem;
-    min-height: 3rem;
+    width: 9rem;
+    height: 6rem;
+    min-width: 9rem;
+    min-height: 6rem;
     object-fit: cover;
     border: 1px solid #330708;
 }
@@ -614,6 +614,27 @@ p a, li a {
 
   font-family: 'Arima Madurai', cursive;
   margin-top: 0.4rem;
+  text-align: center;
+}
+
+.payment-form p {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.payment-form .radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.3rem 0;
+}
+
+.payment-form .form-button {
+  display: inline-block;
+  margin-top: 1rem;
+  align-self: center;
+  width: auto;
   text-align: center;
 }
 
@@ -1121,10 +1142,7 @@ p a, li a {
   font-size: 1.2rem;
 }
 
-.detailed-product-section h4{
-  font-family: "Charis SIL", serif;
-  color: #AD4804;
-}
+
 
 .detailed-product-section .product-card {
   display: flex;
@@ -1135,8 +1153,8 @@ p a, li a {
 }
 
 .detailed-product-section .product-card img.product-image {
-  max-width: 20rem;
-  max-height: 15rem;
+  width: 20rem;
+  height: 15rem;
   object-fit: cover; 
   border: 1px solid #330708;
   display: block;
@@ -1156,6 +1174,19 @@ p a, li a {
   align-items: center;
 }
 
+.recommended-section .product-listing .card-footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 1rem;
+}
+
+.recommended-section h3 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 48rem) {
   .detailed-product-section .product-card  {
     flex-direction: column;
@@ -1163,9 +1194,7 @@ p a, li a {
     text-align: center;
   }
 
-  .detailed-product-section .card-footer {
-    flex-direction: column; 
-  }
+  
 
   .detailed-product-section .card-footer a.form-button {
     width: 60%; 
@@ -1245,31 +1274,49 @@ p a, li a {
   CONTACTS AND FEEDBACK PAGE
 */
 
-.products-page .form-elements {
+.contact-section {
+  max-width: 70rem;
+  margin: 0 auto 4rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 2rem;
 }
 
-.contact-section {
-  margin-left: 3rem; 
+.contact-section .form-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 25rem
 }
 
-#form-feedback {
-  border: 1px solid #787878;
-  border-radius: 0.25rem;
+.contact-section .form-elements label {
+  align-self: flex-start;
+  font-weight: 600;
+}
+
+.contact-section .form-elements input,
+.contact-section .form-elements textarea {
+  width: 100%;
   padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #787878;
   font-family: "Charis SIL", serif;
-  transition: 0.2s;
+  box-sizing: border-box;
 }
 
-#form-feedback:hover, #form-feedback:focus {
+.contact-section .form-elements input:focus,
+.contact-section .form-elements textarea:focus {
   outline: none;
   border: 1px solid #330708;
   box-shadow: 0 0 0 2px rgba(51, 7, 8, 0.2);
 }
 
 .contact-section .form-button {
+  align-self: center;
+  margin-top: 3rem;
   display: inline-block;
-  margin-top: 1.5rem;
 }
