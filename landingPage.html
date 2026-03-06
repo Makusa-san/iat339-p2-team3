@@ -10,12 +10,12 @@
 </head>
 
 <body class="home-page">
-
+<!--NAVIGATION BAR-->
   <nav id="navbar" class="navbar">
   <div class="logo">
 <nav>
       <a href = "landingPage.html" class = "logo">
-        <img src="img/mapastry-logo.png" alt="MaPastry Canadian Bakery logo">
+        <img src="img/mapastry-logo.png" alt="MaPastry Canadian Bakery logo (MaPastry - white; Canadian Bakery - dark red)">
       </a>
       </nav>
   </div>
@@ -28,8 +28,8 @@
 
    <div class="cart">
     <a href="checkout.html" class = "icon">
-      <img src="img/cart-icon.png" class = "default" alt="Shopping cart">
-      <img src="img/cart-hover.png" class="hover">
+      <img src="img/cart-icon.png" class = "default" alt="Shopping cart button (default)">
+      <img src="img/cart-hover.png" class="hover" alt="Shopping cart button (hover)">
     </a>
   </div>
 
@@ -48,20 +48,18 @@
       <h1>Satisfy your sweet tooth’s cravings...</h1>
 
       <p>
-        MaPastry is a brand with a warm and welcoming vibe, very approachable, comforting,
-        offering a sense of familiarity to Canadians, while also remaining curious to people,
-        who explore Canadian culture. MaPastry values are warmth, comfort and preservation
-        of traditions.
+        MaPastry brings comfort and a sense of home to Canadians, while opening the door to those discovering Canadian culture.
       </p>
-
+      <div class="buttonLAND">
       <a href="product-list.html" class="form-button">
         Order Now
       </a>
+      </div>
     </div>
 
     <div class="canadian-badge">
-      <img src="img/maple-leaf.png" alt="Maple leaf icon">
-      <span>Proudly Canadian</span>
+      <img src="img/maple-leaf.png" alt="Maple leaf icon (for proudly canadian badge)">
+      <span>Proudly Canadian</span> <!-- I read about span here:https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/span -->
     </div>
 
     
@@ -82,7 +80,7 @@
 
   <div class="news-card">
     <h3>Introducing Our Spring Maple Collection</h3>
-      <img src="img/maplePastry1.png" alt="Maple dessert">
+      <img src="img/maplePastry1.png" alt="Maple desserts and maple syrups on the background. The image is for the news card about the new spring maple collection.">
     <p>
         We’re excited to launch our new seasonal Maple Collection, inspired by the rich sweetness of Canadian maple syrup. From flaky maple croissants to our signature maple pecan danishes!
     </p>
@@ -90,7 +88,7 @@
 
   <div class="news-card">
     <h3>Freshly Baked Every Morning</h3>
-      <img src="img/maplePastry2.png" alt="Fresh baked pastries">
+      <img src="img/maplePastry2.png" alt="Fresh baked pastries and maple syrups on the background. The image is for the news card about freshly baked pastries every morning.">
     <p>
        Our ovens start early so your favorites are ready fresh every morning. Stop by to enjoy warm pastries, buttery layers, and the comforting aroma of maple in every bite. Quality and freshness are always our top priorities.
     </p>
@@ -98,7 +96,7 @@
 
   <div class="news-card">
     <h3>Now Serving Specialty Coffee</h3>
-      <img src="img/maplePastry3.png" alt="Maple Syrup pastries">
+      <img src="img/maplePastry3.png" alt="Maple Syrup pastries and maple syrups on the background. The image is for the news card about the new specialty coffee.">
     <p>
       Great pastries deserve great coffee. We’ve partnered with a local roaster to bring you smooth, rich espresso and handcrafted lattes — the perfect pairing for your maple treat.
     </p>
@@ -106,7 +104,7 @@
 
   <div class="news-card">
     <h3>Holiday Pre-Orders Are Open</h3>
-      <img src="img/maplePastry4.png" alt="Maple Syrup pastries">
+      <img src="img/maplePastry4.png" alt="Premium maple syrups. The image is for the news card about the holiday pre-orders.">
     <p>
       Planning a gathering? Our maple tarts, pastry boxes, and custom dessert trays are now available for pre-order. Let us make your celebrations sweeter!
     </p>
@@ -114,21 +112,21 @@
 
 </section>
 
-
-
+<!-- FOR SCROLLING EFFECT (NAVBAR)-->
 <script>
-  const navbar = document.getElementById("navbar");
-  const heroSection = document.querySelector(".top");
+  const navbar = document.getElementById("navbar"); /* I learnt this here: https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById */
+  const heroSection = document.querySelector(".top"); /* I learnt this here:https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector */
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > heroSection.offsetHeight - 100) {
-      navbar.classList.add("scrolled");
+  window.addEventListener("scroll", function () { /* I learnt this here: https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event */
+    if (window.scrollY > heroSection.offsetHeight - 100) { /* I learnt about offsetHeight here:https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight */
+      navbar.classList.add("scrolled"); /* I learnt about classList here:https://developer.mozilla.org/en-US/docs/Web/API/Element/classList */
     } else {
       navbar.classList.remove("scrolled");
     }
   });
 </script>
 
+<!-- FOOTER -->
 <footer class = "web-footer">
         <div class = "footer-container">
           <div class = "footer-column-first">
@@ -141,19 +139,19 @@
           </div>
           <div class = "footer-column-second">
             <h4>Pages</h4>
-            <a href="landingPage.html" class="nav">Main Page</a>
-            <a href="about.html" class="nav">About</a>
-            <a href="product-list.html" class="nav">Menu</a>
-            <a href="checkout.html" class="nav">Checkout</a>
-            <a href="contacts.html" class="nav">Contacts</a>
+            <a href="landingPage.html" class="navFooter">Main Page</a>
+            <a href="about.html" class="navFooter">About</a>
+            <a href="product-list.html" class="navFooter">Menu</a>
+            <a href="checkout.html" class="navFooter">Checkout</a>
+            <a href="contacts.html" class="navFooter">Contacts</a>
           </div>
           <div class = "footer-column-third">
             <h4>Documents</h4>
-            <a href="https://github.com/Makusa-san/iat339-p2-team3" class = "nav">GitHub</a>
-            <a href="https://makusa-san.github.io/iat339-p2-team3/index.html" class = "nav">Style Guide</a>
-            <a href="https://makusa-san.github.io/iat339-p2-team3/index.html#citations" class = "nav">Citations</a>
-            <a href = "#" class = "nav">Terms of Use</a>
-            <a href = "#" class = "nav">Privacy Policy</a>
+            <a href="https://github.com/Makusa-san/iat339-p2-team3" class = "navFooter">GitHub</a>
+            <a href="https://makusa-san.github.io/iat339-p2-team3/index.html" class = "navFooter">Style Guide</a>
+            <a href="https://makusa-san.github.io/iat339-p2-team3/index.html#citations" class = "navFooter">Citations</a>
+            <a href = "#" class = "navFooter">Terms of Use</a>
+            <a href = "#" class = "navFooter">Privacy Policy</a>
           </div>
           <div class = "footer-column-fourth">
             <div class = "form-elements">

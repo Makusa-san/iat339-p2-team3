@@ -95,7 +95,7 @@ h5 {
 p {
   margin-top: 0;
 }
-
+ /* FOOTER STYLING ------------------- */
 .web-footer{
   background: #AD4804;
   padding: 3rem 2rem 1.5rem 2rem;
@@ -336,9 +336,7 @@ input {
 }
 
 .image-link:hover img, .image-link:focus img {
-  transform: scale(1.02);
   filter: brightness(1.08) saturate(1.08); /*looked up for some effects when hovering over image: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/brightness */
-  border: 2px solid #330708;
 }
 
 /* 
@@ -413,6 +411,24 @@ section{
   transition: 0.2s;
   font-weight: 600;
   text-decoration: none;
+  
+}
+
+.form-buttonRESET {
+  background: transparent;
+  font-family: "Charis SIL", serif;
+  color: #4C6D4F;
+  padding: 0.2rem 1rem;
+  border: 1.5px solid #043709;
+  transition: 0.2s;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-buttonRESET:hover {
+ background: #F7D888;
+  color: #6E2606;
+  border: 1.5px solid #690D0E;
 }
 
 .form-button:hover {
@@ -639,35 +655,40 @@ p a, li a {
 }
 
 /* =========================
-   HOME PAGE
+   LANDING PAGE
 ========================= */
 
 .home-page {
   padding:0;
 }
 
+/* NAVIGATION BAR FOR LANDING PAGE */
 .navbar {
   position: fixed;
-
   width: 100%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   padding: 0 4rem;
-  height: 6.125rem;
+  height: 5rem;
   box-sizing: border-box;
 
   background: transparent;
-  transition: background-color 0.3s ease;
   z-index: 1;
 }
 
 .nav {
   color: #F7D888;
   text-decoration: none;
-  padding: 0rem 4rem;
+  padding: 1.7rem 3rem;
+  transition: 0.3s ease;
+}
+
+.navFooter {
+  color: #F7D888;
+  text-decoration: none;
+  padding: 0 4rem;
   transition: 0.3s ease;
 }
 
@@ -676,10 +697,16 @@ p a, li a {
   color: #FDFBD4;
 }
 
+/* NAVIGATION BAR FOR OTHER PAGES */
+
 .navbar.scrolled {
-  background-color: #AD4804; 
+  background-color: #AD4804;
 }
 
+.navbar.scrolled .nav:hover {
+  text-shadow: 0 0 0 rgba(0,0,0,0);
+  background: #8B2E00;
+}
 .cart {
   display: flex;
   align-items: flex-start;
@@ -691,8 +718,8 @@ p a, li a {
 }
 
 .icon {
-  position: relative; 
-  display: inline-flex;
+  position: relative; /* learnt how to position elements here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position */
+  display: inline-flex; /* i learnt how to combine inline and flex here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display */
   align-items: center;
 }
 
@@ -712,12 +739,11 @@ p a, li a {
   opacity: 0;
 }
 
-/* TOP */
-
+/* TOP (LANDING PAGE) */
 .top {
   position: relative;
   height: 100vh; /* I read about it here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length#vh */
-  background: url("img/main-page-cafe.png") center/cover; /* I read about it here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/url_function */
+  background: url("img/mainBG.png") center/cover; /* I read about it here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/url_function */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -731,7 +757,7 @@ p a, li a {
 
 .top-content {
   max-width: 75rem;
-  padding: 0 4rem 6rem 4rem;
+  padding: 2rem 4rem 6rem 4rem;
 }
 
 .top-content h1 {
@@ -745,9 +771,13 @@ p a, li a {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 4rem;
+  margin-left: 1rem;
+  max-width: 35rem;
 }
 
-
+.buttonLAND {
+  margin-left: 1rem;
+}
 
 .canadian-badge {
   display: flex;
@@ -761,6 +791,19 @@ p a, li a {
 
 .canadian-badge img {
   height: 1.875rem;
+}
+
+/* =========================
+   NEWS/UPDATES SECTION
+========================= */
+.news-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2rem;
+  padding: 4rem;
+  max-width: 87.5rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
 }
 
 .newsabout-section {
@@ -797,13 +840,14 @@ p a, li a {
   height: 1px;
   background-color: #330708; 
 }
+
 /* =========================
    ABOUT PAGE
 ========================= */
 
 .about-page .navbar {
   background:#AD4804;
-  position: absolute;   
+  position: fixed;   
   top: 0;
 }
 
@@ -812,6 +856,12 @@ p a, li a {
 
 }
 
+.about-page .nav:hover {
+  background-color: #8B2E00; 
+  color: #FDFBD4;
+  text-shadow: none;
+}
+/* ORANGE SECTION */
 .bgOrange {
   background: #AD4804;
   text-align: center;
@@ -830,20 +880,6 @@ p a, li a {
   color: #FFDE87;
 }
 
-.bgBeige {
-  background: #D39665;
-  text-align: center;
-  padding-top: 5rem;
-  margin-bottom: 0;
-}
-
-.news-columns img {
-  width: 100%;
-  max-height: 12rem;
-  object-fit: cover;
-}
-
-
 .orangeSection-subtitle {
   display: flex;
   align-items: center;
@@ -853,11 +889,11 @@ p a, li a {
   gap: 1.5rem;
   margin-bottom: 4rem;
 
-
   font-size: 1rem;
   color: #FFDE87; 
 }
 
+/* i learnt how to use pseudo elements to create lines on the sides of the subtitle here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements */
 .orangeSection-subtitle::before,
 .orangeSection-subtitle::after {
   content: "";
@@ -866,8 +902,36 @@ p a, li a {
   background-color: #FFDE87; 
 }
 
+/* BEIGE SECTION */
+.bgBeige {
+  background: #D39665;
+  text-align: center;
+  padding-top: 5rem;
+  margin-bottom: 0;
+}
 
+.bgBeige img {
+  width: 100%;
+  max-height: 22rem;
+  padding-top: 4rem;
+  object-fit: cover;
+}
+.news-columnsABOUT {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2rem;
+  padding: 4rem;
+  max-width: 87.5rem;
+  margin: 0 auto;
+  padding-bottom: 8rem;
+}
+.news-columns img {
+  width: 100%;
+  max-height: 12rem;
+  object-fit: cover;
+}
 
+/* YELLOW SECTION */
 .bgYellow {
   background: #F7D888;
   text-align: center;
@@ -879,8 +943,8 @@ p a, li a {
   color: #330708;
   display: flex;
   flex-direction: column;
-   align-items: flex-start;
-  gap: 8px;
+  align-items: flex-start;
+  gap: 0.5rem;
   justify-content: left;
   text-align: left;
 
@@ -888,7 +952,7 @@ p a, li a {
 .badge-top {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
+  gap: 0.5rem;
   font-weight: 500;
   font-style: italic;
 }
@@ -900,6 +964,9 @@ p a, li a {
   padding-left: 2rem;
 }
 
+.bgYellow h2{
+  margin-top: 4rem;
+}
 .values-columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
@@ -915,7 +982,7 @@ p a, li a {
   margin: 0 auto;
 }
 
-
+/* WHITE SECTION (QUOTE PART) */
 .staff-quote {
   text-align: center;
   padding-top: 4rem;
@@ -949,8 +1016,10 @@ p a, li a {
 }
 
 /* quotes */
+
+/* I learnt how to make big quotes here: https://stackoverflow.com/questions/27426045/big-quotation-marks-styled-in-html-css */
 .quote-text p::before {
-  content: "\201C";
+  content: open-quote;
   font-size: 4rem;
   position: absolute;
   left: -3rem;
@@ -959,7 +1028,7 @@ p a, li a {
 }
 
 .quote-text p::after {
-  content: "\201D";
+  content: close-quote;
   font-size: 4rem;
   position: absolute;
   right: -2rem;
@@ -980,6 +1049,7 @@ p a, li a {
   padding-left: 4rem;
 }
 
+/* line before author name */ 
 .quote-author h3::before {
  content: "";
   position: absolute;
@@ -1003,18 +1073,8 @@ p a, li a {
   height: auto;
 }
 
-/* =========================
-   NEWS/UPDATES SECTION
-========================= */
-.news-columns {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 2rem;
-  padding: 4rem;
-  max-width: 87.5rem;
-  margin: 0 auto;
-}
 
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 61.125rem) {
   .navbar {
     flex-direction: column;
@@ -1054,12 +1114,25 @@ p a, li a {
     font-size: 0.9rem;
   }
 
+  .bgOrange h2 {
+    padding-top: 2rem;
+  }
+
 }
 
 
 @media (max-width: 56.25rem) {
   .news-columns {
     grid-template-columns: 1fr;
+  }
+  .news-columnsABOUT {
+    grid-template-columns: 1fr;
+  }
+
+  .bgBeige img {
+    padding: 0;
+    max-width: 100%;
+    height: auto;
   }
   .top-content {
     padding: 0rem 1.5rem;
@@ -1069,12 +1142,13 @@ p a, li a {
     gap: 0.5rem;
   }
 
-  .quote-author h3::before {
+  
+.quote-author h3::before {
  content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
-  margin-left: 1rem;
+  left: 48%;
+  margin-left: 2rem;
   width: 3rem;
   height: 1px;
   background: #330708;
@@ -1259,7 +1333,7 @@ p a, li a {
  content: "";
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 20%;
   margin-left: 1rem;
   width: 3rem;
   height: 1px;
