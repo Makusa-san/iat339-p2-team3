@@ -19,6 +19,7 @@ body {
 }
 
 
+
 header{
   background: #AD4804;
   color: #F7D888;
@@ -199,10 +200,22 @@ p {
 
 }
 
-@media (max-width: 20rem) {
+@media (max-width: 25rem) {
   .footer-container {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
+
+  .footer-column-second .navFooter,
+  .footer-column-third .navFooter {
+    margin-left: 0;
+  }
+
+  .footer-column-second{
+    align-items: flex-start;
+  }
+
+
 }
 
 /* 
@@ -1451,6 +1464,8 @@ p a, li a {
   gap: 0.6rem;
   width: 100%;
   max-width: 25rem;
+  padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .contact-section .form-elements label {
@@ -1494,7 +1509,7 @@ p a, li a {
   }
 
   .contact-item {
-    align-items: center; /* center icons and text on mobile */
+    align-items: center; 
     text-align: left;
   }
 
@@ -1504,5 +1519,8 @@ p a, li a {
 
   .form-button {
     align-self: center;
+  }
+  .form-elements {
+    
   }
 }
