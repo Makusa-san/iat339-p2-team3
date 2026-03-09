@@ -157,7 +157,12 @@ p {
   margin-left: 3.9rem;
 }
 
-@media (max-width: 60rem) {
+.footer-column-fourth .form-elements {
+  width: 100%;
+  max-width: 25rem;
+}
+
+@media (max-width: 62.875rem) {
 
   .footer-column-first img{
     margin-left: 0.5rem;
@@ -169,15 +174,20 @@ p {
 
   .footer-column-first {
     grid-column: 1 / -1;
+  }
+
+  .footer-column-first{
     align-items: center;
   }
 
   .footer-column-second{
     align-items: center;
+    max-width: 20rem;
   }
 
   .footer-column-third{
     align-items: center;
+    max-width: 20rem;
   }
 
   .footer-column-fourth {
@@ -191,30 +201,85 @@ p {
   }
 
   .footer-column-second h4 {
-    margin-left: 0;
+    align-self: flex-start;
   }
 
   .footer-column-third h4 {
-    margin-left: 0;
+    align-self: flex-start;
   }
 
 }
 
-@media (max-width: 25rem) {
+@media (min-width: 41.25rem) and (max-width: 62.875rem){
+
+  .footer-container-second{
+    margin-left: 15rem;
+  }
+}
+
+@media (max-width: 41.25rem) {
   .footer-container {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr;   
   }
 
-  .footer-column-second .navFooter,
-  .footer-column-third .navFooter {
-    margin-left: 0;
+  .footer-column-first{
+    align-items: start;
+    margin-left: 4rem;
   }
 
-  .footer-column-second{
+
+
+  .footer-column-second h4{
     align-items: flex-start;
   }
 
+  .footer-column-fourth{
+    align-items: flex-start;
+    margin-left: 3.5rem;
+    max-width: 40rem;
+  }
+
+  .footer-column-fourth .form-button{
+    align-self: flex-start;
+  }
+
+  .footer-column-first, .footer-column-fourth {
+  margin-left: 1.5rem;
+}
+
+  .footer-column-second,
+  .footer-column-third {
+    align-items: flex-start;
+  }
+
+  .footer-column-second h4,
+.footer-column-third h4 {
+  margin-left: 0;
+}
+
+.footer-column-second,
+  .footer-column-third {
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+
+  .footer-column-first h4{
+    align-items: flex-start;
+    padding-right: 1.5rem;
+  }
+
+  .navFooter {
+    margin-left: 0;
+  }
+
+  .footer-column-first{
+  align-items: flex-start;
+  margin-left: 1rem;
+}
+
+  .footer-column-first img{
+    align-items: flex-start;
+  }
 
 }
 
@@ -569,6 +634,28 @@ p a, li a {
   PRODUCTS LISTING PAGE STYLING
 */
 
+.product-list-subtitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  font-size: 1rem;
+  color: #330708;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+
+.product-list-subtitle::before,
+.product-list-subtitle::after{
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #330708;
+}
+
 .products-page .navbar {
   background:#AD4804;
   position: sticky;
@@ -624,7 +711,7 @@ p a, li a {
 }
 
 .products-page h2 {
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .page-header {
@@ -649,12 +736,31 @@ p a, li a {
   margin: 0 auto;
 }
 
+@media(max-width: 40rem){
+  .product-list-subtitle{
+    margin-bottom: 2rem;
+  }
+
+  .products-page h2 {
+    padding-top: 6rem;
+}
+
+  .products{
+  margin-left: 1rem;
+}
+
+}
+
 /*
   CHECKOUT PAGE STYLING
 */
 
-.checkout-cart h2, .payment-form h2 {
+.products-page .checkout-element {
+  padding-top: 6rem;
+}
 
+.checkout-cart h2, .payment-form h2 {
+  margin-top: 6rem;
   font-family: 'Arima Madurai', cursive;
   margin-top: 0.4rem;
   text-align: center;
@@ -1042,7 +1148,7 @@ p a, li a {
   content: open-quote;
   font-size: 4rem;
   position: absolute;
-  left: -3rem;
+  right: 40rem;
   top: -2.5rem;
   color: #a3471c;
 }
@@ -1069,17 +1175,7 @@ p a, li a {
   padding-left: 4rem;
 }
 
-/* line before author name */ 
-.quote-author h3::before {
- content: "";
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  margin-left: 1rem;
-  width: 3rem;
-  height: 1px;
-  background: #330708;
-}
+
 
 .quote-author p {
    display: flex;
@@ -1138,6 +1234,28 @@ p a, li a {
     padding-top: 2rem;
   }
 
+  .quote-text p::before {
+  content: open-quote;
+  font-size: 4rem;
+  position: absolute;
+  right: 17rem;
+  top: -2.5rem;
+  color: #a3471c;
+}
+
+.quote-text p::after {
+  content: close-quote;
+  font-size: 4rem;
+  position: absolute;
+  right: -2rem;
+  bottom: -4rem;
+  color: #a3471c;
+}
+
+.quote-text p{
+  max-width: 16rem;
+}
+
 }
 
 
@@ -1162,17 +1280,7 @@ p a, li a {
     gap: 0.5rem;
   }
 
-  
-.quote-author h3::before {
- content: "";
-  position: absolute;
-  top: 50%;
-  left: 48%;
-  margin-left: 2rem;
-  width: 3rem;
-  height: 1px;
-  background: #330708;
-}
+
 }
 
 .news-card {
@@ -1349,16 +1457,6 @@ p a, li a {
     justify-content: center;
   }
 
-  .quote-author h3::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  margin-left: 1rem;
-  width: 3rem;
-  height: 1px;
-  background: #330708;
-}
 
 }
 
@@ -1508,6 +1606,10 @@ p a, li a {
     max-width: 25rem;
   }
 
+  .contacts-subtitle{
+    margin-bottom: 0rem;
+  }
+
   .contact-item {
     align-items: center; 
     text-align: left;
@@ -1520,7 +1622,5 @@ p a, li a {
   .form-button {
     align-self: center;
   }
-  .form-elements {
-    
-  }
+
 }
