@@ -100,6 +100,20 @@ p {
   background: #AD4804;
   padding: 3rem 2rem 1.5rem 2rem;
 }
+.navFooter {
+  display: inline-block;
+  align-self: flex-start;
+  color: #F7D888;
+  text-decoration: none;
+  padding: 0.25rem 0.8rem;
+  margin-left: 3rem;
+  transition: 0.3s ease;
+}
+
+.navFooter:hover{
+  background: #6E2606;
+  color: #FDFBD4;
+}
 
 .footer-container{
   display: grid;
@@ -683,18 +697,6 @@ p a, li a {
   text-decoration: none;
   padding: 1.7rem 3rem;
   transition: 0.3s ease;
-}
-
-.navFooter {
-  color: #F7D888;
-  text-decoration: none;
-  padding: 0 4rem;
-  transition: 0.3s ease;
-}
-
-.navFooter:hover{
-  background: #6E2606;
-  color: #FDFBD4;
 }
 
 .nav:hover {
@@ -1478,7 +1480,7 @@ p a, li a {
 
 
 
-@media (max-width: 52rem) {
+@media (max-width: 40rem) {
   .contacts-layout {
     flex-direction: column;
     align-items: center;
