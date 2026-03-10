@@ -1684,8 +1684,12 @@ p a, li a {
 
 /* CITATIONS PAGE */
 
+.citations {
+padding-bottom: 3rem;
+}
 .citations h1 {
-  text-align: center;
+text-align: center;
+padding-top: 6rem;
  color:#330708;
 
 }
