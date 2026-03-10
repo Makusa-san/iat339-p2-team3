@@ -42,6 +42,21 @@
 </nav>
 </header>      
 
+</nav>
+        <!-- Cart -->
+  <section class="checkout-element">
+    <h1 class = "checkout-header">Your Cart</h1>
+      <p class = "checkout-subtitle">Just one more step until your order! Keep it up!</p>
+      <div class="checkout-cart">
+        <ul class="cart-items">
+          <li class = "cart-header">
+              <div class = "header-product">Product</div>
+              <div class = "header-price">Price</div>
+          </li>
+          <li class="cart-item">
+            <div class="item-details">
+              <img src="img/maple-cake.jpg" alt="Maple Syrup Cheesecake" class="cart-item-image"> <!--cheesecake image: https://www.google.com/search?sca_esv=449808707ab54592&rlz=1C5CHFA_enRU907RU908&sxsrf=ANbL-n4_2D99c-ySaFGrkwpUbXqF6I4DnA:1769443565425&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp9lEhFAN_4ain3HSNQWw-mCdteDOdu-whizqull19J697Hd2DjFbIIkobt5MxzWRrbQzH3_BR0OTUD3HedzAmCP3hjuTMJT6f6QsidAo8PcZbRUfjd37k2TVsaGn2-AFP1raUx1RsslEKQg4GU355hj3-DpxvTGIQL5eNoRPHcNl1EwfTXZBdG1ewbfq_hCqn_nk0sQ&q=maple+cheesecake&sa=X&sqi=2&ved=2ahUKEwj3gav5yqmSAxVMEjQIHQCUFR4QtKgLegQIGhAB&biw=1422&bih=849&dpr=2&aic=0#vhid=mEJMOMpN0LvPjM&vssid=mosaic-->
+              <div class="item-name">Maple Syrup Cheesecake</div>
         <section class="checkout-element">
           <h2 class = "checkout-header">Your Cart</h2>
             <p class = "checkout-subtitle">Just one more step until your order! Keep it up!</p>
@@ -95,21 +110,58 @@
               <label for = "form-post">Postal Code:</label>
                 <input type = "text" name = "form-post" id = "form-post" placeholder = "A1A 1A1">
             </div>
-
-            <p>Choose Your Payment Method:</p>
-            <label class="radio">
-            <input type="radio" name="plan">
-            <span class="custom-radio"></span>
-            Credit/Debit Card
-            </label>
-            <label class="radio">
-            <input type="radio" name="plan">
-            <span class="custom-radio"></span>
-            PayPal
-            </label>
-            <button class = "form-button" type = "submit">Submit</button>
-          </form>
-        </section>
+            <div class="item-price">$6.35</div>
+          </li>
+          <li class="cart-item">
+            <div class="item-details">
+              <img src="img/latte.jpeg" alt="Walnut Oat Latte" class="cart-item-image"> <!--latte image: https://myveganminimalist.com/oat-milk-latte-foamy-vegan/-->
+              <div class="item-name">Walnut Oat Latte (No caffeine)</div>
+            </div>
+            <div class="item-price">$7.35</div>
+          </li>
+          <li class="cart-item">
+            <div class="item-details">
+              <img src="img/cookie.jpg" alt="Sugar Cookie" class="cart-item-image"> <!--cookie image: https://sallysbakingaddiction.com/giant-sugar-cookie/-->
+              <div class="item-name">Sugar Cookie</div>
+            </div>
+            <div class="item-price">$2.35</div>
+          </li>
+          <li class="cart-total">
+            <div class="total-label">Total:</div>
+              <div class="total-value">$16.05</div>
+          </li>
+        </ul>
+      </div>
+      <!-- Payment Form -->
+      <h2 class = "payment-header">Checkout Form</h2>
+      <p class = "checkout-subtitle">Almost there! Just fill the payment form.</p>
+      <form class="payment-form">
+        <div class = "form-elements">
+          <label for = "form-name">Full Name:</label>
+            <input type = "text" name = "form-name" id = "form-name" placeholder = "John Johnson">
+          <label for = "form-phone">Phone Number:</label>
+            <input type = "text" name = "form-phone" id = "form-phone" placeholder = "+ x(xxx)xxx-xx-xx">
+          <label for = "form-email">Email:</label>
+            <input type = "text" name = "form-email" id = "form-email" placeholder = "john_johnson@bakery.ca">
+          <label for = "form-address">Address:</label>
+            <input type = "text" name = "form-address" id = "form-address" placeholder = "Caramel Avenue 123">
+          <label for = "form-post">Postal Code:</label>
+            <input type = "text" name = "form-post" id = "form-post" placeholder = "A1A 1A1">
+        </div>
+        <p>Choose Your Payment Method:</p>
+        <label class="radio">
+          <input type="radio" name="plan">
+          <span class="custom-radio"></span>
+          Credit/Debit Card
+        </label>
+        <label class="radio">
+          <input type="radio" name="plan">
+          <span class="custom-radio"></span>
+          PayPal
+        </label>
+        <button class = "form-button" type = "submit">Submit</button>
+      </form>
+    </section>
         
         <!-- FOOTER -->
         <footer class = "web-footer">
