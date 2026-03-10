@@ -128,7 +128,7 @@ p {
 
 .footer-container{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* short-cut on making columns, found here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/repeat*/
   gap: 2rem;
 }
 
@@ -184,7 +184,7 @@ p {
   }
 
   .footer-column-first {
-    grid-column: 1 / -1;
+    grid-column: 1 / -1; /*looked up to divide content on the footer: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-column */
   }
 
   .footer-column-first{
@@ -264,11 +264,11 @@ p {
   }
 
   .footer-column-second h4,
-.footer-column-third h4 {
+  .footer-column-third h4 {
   margin-left: 0;
 }
 
-.footer-column-second,
+  .footer-column-second,
   .footer-column-third {
     align-items: flex-start;
     padding-left: 1rem;
@@ -330,7 +330,7 @@ p {
 }
 
 .button, .button-nav, .product-link {
- background: #AD4804;
+  background: #AD4804;
   color: #F7D888;
   border: none;
   padding: 0.6rem 1rem;
@@ -352,7 +352,7 @@ p {
 
 
 .form-elements label {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .image-link {
@@ -386,7 +386,7 @@ input {
 .radio {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   gap: 10px;
 }
 
@@ -416,11 +416,11 @@ input {
   width: 10px;
   height: 10px;
   background: #330708;
-  border-radius: 50%;
+  border-radius: 50%; /*changed roundness of buttons: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-radius */
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);/*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/translate*/
 }
 
 
@@ -484,7 +484,7 @@ section{
 }
 .product-allergens{
   margin-bottom: 1.5rem;
-  text-decoration: underline;
+  text-decoration: underline; /* looked here how to underline text: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration*/
   font-style: italic;
   font-weight: 400;
   letter-spacing: 0.03rem;
@@ -613,7 +613,7 @@ section{
     height: 6rem;
     min-width: 9rem;
     min-height: 6rem;
-    object-fit: cover;
+    object-fit: cover; /* resizing image in the container: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit */
     border: 1px solid #330708;
 }
 .cart-total {
@@ -639,8 +639,6 @@ p a, li a {
   overflow-wrap: anywhere; /* helped me to adjust text out of style guide componenets, in the imagery, found here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-wrap */
   word-break: break-word; /* used for the same reason: https://css-tricks.com/almanac/properties/w/word-break/ */
 }
-
-
 
 
 /*
@@ -916,7 +914,7 @@ p a, li a {
   position: absolute;   
   top: 0;
   opacity: 0;
-   transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .icon:hover .hover {
@@ -1660,8 +1658,6 @@ p a, li a {
 .contact-section .form-button{
   margin-top: 1.5rem;
 }
-
-
 
 @media (max-width: 40rem) {
   .contacts-layout {
