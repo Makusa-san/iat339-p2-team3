@@ -630,6 +630,8 @@ p a, li a {
 }
 
 
+
+
 /*
   PRODUCTS LISTING PAGE STYLING
 */
@@ -759,11 +761,44 @@ p a, li a {
   padding-top: 6rem;
 }
 
-.checkout-cart h2, .payment-form h2 {
+.checkout-subtitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  font-size: 1rem;
+  color: #330708;
+  width: 100%;
+}
+
+
+
+.checkout-subtitle::before,
+.checkout-subtitle::after{
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #330708;
+}
+
+.checkout-header, .payment-header {
   margin-top: 6rem;
   font-family: 'Arima Madurai', cursive;
   margin-top: 0.4rem;
   text-align: center;
+}
+
+.item-details{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-item-image{
+  width: auto;
+  height: 4rem;
 }
 
 .payment-form p {
@@ -786,6 +821,23 @@ p a, li a {
   width: auto;
   text-align: center;
 }
+
+
+
+@media (max-width: 35rem){
+  .item-name, .item-price{
+    font-size: 0.8rem;
+  }
+
+  .total-label, .total-value{
+    font-size: 1rem;
+  }
+  .checkout-cart, .payment-form {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 
 /* =========================
    LANDING PAGE
@@ -1624,3 +1676,4 @@ p a, li a {
   }
 
 }
+
