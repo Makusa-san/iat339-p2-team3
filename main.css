@@ -100,6 +100,17 @@ p {
   background: #AD4804;
   padding: 3rem 2rem 1.5rem 2rem;
 }
+
+.footer-column-first h3,
+.footer-column-first h4,
+.footer-column-second h3,
+.footer-column-second h4,
+.footer-column-third h3,
+.footer-column-third h4,
+.footer-column-fourth h3,
+.footer-column-fourth h4 {
+  font-size: 1.2rem;
+}
 .navFooter {
   display: inline-block;
   align-self: flex-start;
@@ -126,6 +137,7 @@ p {
   flex-direction: column;
 }
 
+
 .footer-column-first{
   gap: 0.6rem;
 }
@@ -148,11 +160,11 @@ p {
   align-self: flex-start;
 }
 
-.footer-column-second h4 {
+.footer-column-second h3, .footer-column-second h4 {
   margin-left: 3.9rem;
 }
 
-.footer-column-third h4 {
+.footer-column-third h3,.footer-column-third h4 {
   margin-left: 3.9rem;
 }
 
@@ -1668,7 +1680,6 @@ p a, li a {
   .form-button {
     align-self: center;
   }
-
 }
 
 /* CITATIONS PAGE */
