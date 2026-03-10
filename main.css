@@ -20,17 +20,16 @@ body {
 
 
 
-header{
+.style-guide-page header{
   background: #AD4804;
   color: #F7D888;
-  padding: 2rem;
+  padding: 0;
   margin-bottom: 2rem;
   display: flex;
   gap: 1.5rem;
-  flex-wrap: wrap; /* used to adjust header elements placing: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap*/
+  flex-wrap: wrap;
   border-radius: 1.75rem;
 }
-
 
 .style-guide-page header nav {
   display: flex;
@@ -38,16 +37,16 @@ header{
   gap: 0.5rem;        
 }
 
-header nav a{
+.style-guide-header nav a{
   color: #F7D888;
   text-decoration: none;
-  padding: 0.6rem 1rem;
+  padding: 0.8rem 1rem;
   transition: 0.2s;
   margin-left: 1rem;
 }
 
 
-header nav a:hover {
+.style-guide-header nav a:hover {
   background: #6E2606;
   color: #FDFBD4;
 }
@@ -304,7 +303,7 @@ p {
 
 
 
-.nav-link {
+.nav-link header{
   background: #AD4804;
   color: #F7D888;
   text-decoration: none;
@@ -313,7 +312,7 @@ p {
   transition: 0.2s;
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link header:hover, .nav-link header:focus {
   background: #6E2606;
   color: #FDFBD4; 
 }
@@ -848,7 +847,7 @@ p a, li a {
 }
 
 /* NAVIGATION BAR FOR LANDING PAGE */
-.navbar {
+.navbar{
   position: fixed;
   width: 100%;
   display: flex;
@@ -904,7 +903,6 @@ p a, li a {
 .icon .hover {
   position: absolute;   
   top: 0;
-  right: 2;
   opacity: 0;
    transition: opacity 0.2s ease;
 }
@@ -1284,20 +1282,16 @@ p a, li a {
 
   .quote-text p::before {
   content: open-quote;
-  font-size: 4rem;
-  position: absolute;
-  right: 17rem;
-  top: -2.5rem;
+  font-size: 2rem;
   color: #a3471c;
+  margin-right: 0.3rem;
 }
 
 .quote-text p::after {
   content: close-quote;
-  font-size: 4rem;
-  position: absolute;
-  right: -2rem;
-  bottom: -4rem;
+  font-size: 2rem;
   color: #a3471c;
+  margin-left: 0.3rem;
 }
 
 .quote-text p{
@@ -1677,3 +1671,28 @@ p a, li a {
 
 }
 
+/* CITATIONS PAGE */
+
+.citations h1 {
+  text-align: center;
+ color:#330708;
+
+}
+
+.citations-list {
+  list-style: none;
+  padding: 0;
+}
+
+.citations-list li {
+  margin-bottom: 1rem;
+}
+
+.citations-list a {
+  text-decoration: none;
+  color: #AD4804;
+}
+
+.citations-list a:hover {
+  text-decoration: underline;
+}
