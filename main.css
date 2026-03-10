@@ -64,8 +64,8 @@ h1{
   font-family: "Arima Madurai", cursive;
   font-size: 2.8rem;
   padding: 0.6rem 1rem;
-  color: #FDFBD4;
- 
+  color: #330708;
+  padding-top: 4rem;
 }
 
 h2 {
@@ -212,11 +212,11 @@ p {
     align-self: center;
   }
 
-  .footer-column-second h4 {
+  .footer-column-second h4, .footer-column-second h3 {
     align-self: flex-start;
   }
 
-  .footer-column-third h4 {
+  .footer-column-third h4, .footer-column-third h3 {
     align-self: flex-start;
   }
 
