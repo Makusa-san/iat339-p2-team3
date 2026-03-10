@@ -3,6 +3,7 @@
     <head>
 
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacts and Submission</title>
 
         <link href="main.css" rel="stylesheet">
@@ -15,13 +16,13 @@
 
     <body class = "products-page">
       <!--NAVIGATION BAR-->
-        <nav id="navbar" class="navbar">
+       <nav id="navbar" class="navbar">
   <div class="logo">
-<nav>
+
       <a href = "landingPage.html" class = "logo">
-        <img src="img/mapastry-logo.png" alt="MaPastry Canadian Bakery logo">
+        <img src="img/mapastry-logo.png" alt="MaPastry Canadian Bakery logo (for about page)">
       </a>
-      </nav>
+    
   </div>
 
   <div class="main-nav">
@@ -32,35 +33,70 @@
 
    <div class="cart">
     <a href="checkout.html" class = "icon">
-      <img src="img/cart-icon.png" class = "default" alt="Shopping cart">
-      <img src="img/cart-hover.png" class="hover">
+      <img src="img/cart-icon.png" class = "default" alt="Shopping cart icon default (for about page)">
+      <img src="img/cart-hover.png" class="hover" alt="Shopping cart icon hover (for about page)">
     </a>
-
   </div>
-
-  
-
-
 
 </nav>
 
-        <h2 class = "page-header">Contacts Info and Feedback Form</h2>
-        <div class = "contact-section">
-        <p>Email: mapastry_bakery@gmail.com</p>
-        <p>Phone Number: + 1 (123) 456 - 78 - 90</p>
-        <p>We are looking forward to hear from you!  We value your opinion and looking forward to imporve our service, so we can satisfy all of our customers and bring the best experience.</p>
-
-        <div class = "form-elements">
-              <label for = "form-name">Full Name:</label>
-                <input type = "text" name = "form-name" id = "form-name" placeholder = "John Johnson">
-              <label for = "form-phone-num">Phone Number:</label>
-                <input type = "text" name = "form-phone-num" id = "form-phone-num" placeholder = "+ x(xxx)xxx-xx-xx">
-              <label for = "form-email">Email:</label>
-                <input type = "text" name = "form-email" id = "form-email" placeholder = "john_johnson@bakery.ca">
-              <label for = "form-feedback">Message:</label>
-                <textarea name="form-feedback" id="form-feedback" placeholder="Type feedback..."></textarea>
+  <h2 class = "page-header">Contacts Info and Feedback Form</h2>
+  <div class = "contact-section">
+    <p class = "contacts-subtitle">We are looking forward to hear from you! Please share your valuable feedback with us.</p>
+    <div class = "contacts-layout">
+      <div class = "contacts-info">
+        <h3>Get in Touch</h3>
+        <div class="contact-item">
+          <img src="img/phone-icon.png" alt="Phone icon" width="35" height="35">
+          <div>
+            <h4>Phone Number</h4>
+            <p>+1 (123) 456-78-90</p>
+          </div>
         </div>
-        <a href="#" class="form-button">Submit Form</a>
+        <div class="contact-item">
+          <img src="img/email-icon.png" alt="Email icon" width="35" height="35">
+            <div>
+              <h4>Email</h4>
+              <p>mapastry_bakery@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <img src="img/location-icon.png" alt="Location icon" width="35" height="35">
+            <div>
+              <h4>Location</h4>
+              <p>Caramel Avenue 487, Vancouver, BC</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <img src="img/insta-icon.png" alt="Instagram icon" width="35" height="35">
+            <div>
+              <h4>Instagram</h4>
+              <p>mapastry_bakery</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <img src="img/facebook-icon.png" alt="Facebook icon" width="35" height="35">
+            <div>
+              <h4>Facebook</h4>
+              <p>MaPastry Bakery</p>
+            </div>
+          </div>
+        </div>
+          <div class = "form-elements">
+            <h3>Feedback Form</h3>
+            <label for = "form-name">Full Name:</label>
+              <input type = "text" name = "form-name" id = "form-name" placeholder = "John Johnson">
+            <label for = "form-phone-num">Phone Number:</label>
+              <input type = "text" name = "form-phone-num" id = "form-phone-num" placeholder = "+ x(xxx)xxx-xx-xx">
+            <label for = "form-email">Email:</label>
+              <input type = "text" name = "form-email" id = "form-email" placeholder = "john_johnson@bakery.ca">
+            <label for = "form-topic">Topic:</label>
+              <input type = "text" name = "form-topic" id = "form-topic" placeholder = "Add new positions...">
+            <label for = "form-feedback">Message:</label>
+              <textarea name="form-feedback" id="form-feedback" placeholder="Type feedback..."></textarea>
+              <a href="#" class="form-button">Submit Form</a>
+          </div>
+        </div>
     </div>
 
     <!-- FOOTER -->
@@ -75,7 +111,7 @@
             <p>Phone: +1(234) 567-78-89</p>
           </div>
           <div class = "footer-column-second">
-            <h4>Pages</h4>
+            <h4>Website Pages</h4>
             <a href="landingPage.html" class="navFooter">Main Page</a>
             <a href="about.html" class="navFooter">About</a>
             <a href="product-list.html" class="navFooter">Menu</a>
@@ -93,7 +129,7 @@
           <div class = "footer-column-fourth">
             <div class = "form-elements">
               <label for = "form-name">Subscribe to our Newsletter</label>
-                <input type = "text" name = "form-name" id = "form-name" placeholder = "example@gmail.com">  
+                <input type = "text" name = "form-email" id = "form-email-footer" placeholder = "example@gmail.com">  
             </div>
             <a href="#" class="form-button">Submit</a>
             <p>© 2026 MaPastry All Rights Reserved.</p>

@@ -3,6 +3,7 @@
     <head>
 
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cake Products Section</title>
 
         <link href="main.css" rel="stylesheet">
@@ -18,11 +19,11 @@
       <!--NAVIGATION BAR-->
         <nav id="navbar" class="navbar">
   <div class="logo">
-<nav>
+
       <a href = "landingPage.html" class = "logo">
-        <img src="img/mapastry-logo.png" alt="MaPastry Canadian Bakery logo">
+        <img src="img/mapastry-logo.png" alt="MaPastry Canadian Bakery logo (for about page)">
       </a>
-      </nav>
+    
   </div>
 
   <div class="main-nav">
@@ -33,16 +34,17 @@
 
    <div class="cart">
     <a href="checkout.html" class = "icon">
-      <img src="img/cart-icon.png" class = "default" alt="Shopping cart">
-      <img src="img/cart-hover.png" class="hover">
+      <img src="img/cart-icon.png" class = "default" alt="Shopping cart icon default (for about page)">
+      <img src="img/cart-hover.png" class="hover" alt="Shopping cart icon hover (for about page)">
     </a>
   </div>
+
 </nav>
         
         <section class="checkout-element">
+          <h2 class = "checkout-header">Your Cart</h2>
+            <p class = "checkout-subtitle">Just one more step until your order! Keep it up!</p>
             <div class="checkout-cart">
-                <div class="checkout-cart">
-            <h2>Your Cart</h2>
             <ul class="cart-items">
               <li class = "cart-header">
                 <div class = "header-product">Product</div>
@@ -76,8 +78,10 @@
             </ul>
           </div>
 
+          <h2 class = "payment-header">Checkout Form</h2>
+                <p class = "checkout-subtitle">Almost there! Just fill the payment form.</p>
+
             <form class="payment-form">
-                <h2>Checkout Form</h2>
             <div class = "form-elements">
               <label for = "form-name">Full Name:</label>
                 <input type = "text" name = "form-name" id = "form-name" placeholder = "John Johnson">
@@ -111,14 +115,14 @@
         <div class = "footer-container">
           <div class = "footer-column-first">
             <img src="img/mapastry-logo.png" alt="MaPastry Canadian Bakery logo" width = 150 height = 50>
-            <h4>Information</h4>
+            <h3>Information</h3>
             <p>Location: Caramel Avenue 487, BC</p>
             <p>Opening Hours: Mon - Sun 09:00 - 19:00</p>
             <p>Email: mapastry_bakery@gmail.com</p>
             <p>Phone: +1(234) 567-78-89</p>
           </div>
           <div class = "footer-column-second">
-            <h4>Pages</h4>
+            <h3>Website Pages</h3>
             <a href="landingPage.html" class="navFooter">Main Page</a>
             <a href="about.html" class="navFooter">About</a>
             <a href="product-list.html" class="navFooter">Menu</a>
@@ -126,7 +130,7 @@
             <a href="contacts.html" class="navFooter">Contacts</a>
           </div>
           <div class = "footer-column-third">
-            <h4>Documents</h4>
+            <h3>Documents</h3>
             <a href="https://github.com/Makusa-san/iat339-p2-team3" class = "navFooter">GitHub</a>
             <a href="https://makusa-san.github.io/iat339-p2-team3/index.html" class = "navFooter">Style Guide</a>
             <a href="https://makusa-san.github.io/iat339-p2-team3/index.html#citations" class = "navFooter">Citations</a>
@@ -136,7 +140,7 @@
           <div class = "footer-column-fourth">
             <div class = "form-elements">
               <label for = "form-name">Subscribe to our Newsletter</label>
-                <input type = "text" name = "form-name" id = "form-name" placeholder = "example@gmail.com">  
+                <input type = "text" name = "form-email" id = "form-email-footer" placeholder = "example@gmail.com">  
             </div>
             <a href="#" class="form-button">Submit</a>
             <p>© 2026 MaPastry All Rights Reserved.</p>
