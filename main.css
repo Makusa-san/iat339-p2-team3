@@ -1442,16 +1442,20 @@ p a, li a {
 }
 
 @media (max-width: 48rem) {
-  .detailed-product-section .product-card  {
-    flex-direction: column;
+  .detailed-product-section .product-card {
+    flex-direction: column; 
     align-items: center;
     text-align: center;
   }
 
-  
+  .detailed-product-section .product-details {
+    text-align: center;
+    margin-left: 0;
+    align-items: center;
+  }
 
-  .detailed-product-section .card-footer a.form-button {
-    width: 60%; 
+  .detailed-product-section .card-footer {
+    justify-content: center;
   }
 
 
