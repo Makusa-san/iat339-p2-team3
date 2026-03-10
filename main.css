@@ -469,15 +469,17 @@ section{
 }
 
 
-.product-listing h4, .product-allergens, .product-description {
+.product-listing h2, .product-allergens, .product-description {
  text-align: left;
  margin-left: 1rem;
  color: #AD4804;
 }
 
 
-.product-listing h4{
+.product-listing h2{
  font-family: "Charis SIL", serif;
+ margin-top: 0;
+ font-size: 1rem;
 }
 .product-description{
  font-weight: 200;
@@ -722,7 +724,8 @@ p a, li a {
 }
 
 .products-page h2 {
-  padding: 3rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }
 
 .page-header {
@@ -937,6 +940,9 @@ p a, li a {
   
 }
 
+.top h1{
+  color: #FDFBD4;
+}
 .logo img {
   height: 3.125rem;
 }
@@ -1390,12 +1396,18 @@ p a, li a {
 */
 .detailed-product-section .product-details .product-name {
   margin-left: 1rem;
+  padding: 0;
 }
 
 .detailed-product-section .product-details .product-cost {
   font-size: 1.2rem;
+  
 }
 
+.product-detailed-view-upper-section .product-name{
+ font-family: "Charis SIL", serif;
+ color: #AD4804;
+}
 
 
 .detailed-product-section .product-card {
@@ -1436,9 +1448,17 @@ p a, li a {
 }
 
 .recommended-section h3 {
-  text-align: center;
+  text-align: left;
+  color: #a3471c;
+  margin-left: 1rem;
+  font-family: "Charis SIL", serif;
   width: 100%;
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.recommended-section .section-header{
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 @media (max-width: 48rem) {
@@ -1592,15 +1612,16 @@ p a, li a {
 
 .contacts-info h2, .form-elements h2 {
   margin-top: 0;
+  font-size: 2rem;
 }
 
 .contacts-info h2 {
-  margin-top: 0;
   margin-bottom: 1rem;
 }
 
 .contact-item h3 {
   margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
 }
 
 .contact-item p {
@@ -1634,6 +1655,7 @@ p a, li a {
   padding-right: 1rem;
 }
 
+
 .contact-section .form-elements label {
   align-self: flex-start;
 }
@@ -1647,6 +1669,9 @@ p a, li a {
   font-family: "Charis SIL", serif;
   box-sizing: border-box;
 }
+
+
+
 
 .contact-section .form-elements input:focus,
 .contact-section .form-elements textarea:focus {
@@ -1687,6 +1712,13 @@ p a, li a {
 
   .form-button {
     align-self: center;
+  }
+}
+
+@media (min-width: 20rem){
+  .top h1{
+    margin-top: 8rem;
+    font-size: 2.5rem;
   }
 }
 
