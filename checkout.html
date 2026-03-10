@@ -3,6 +3,7 @@
     <head>
 
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cake Products Section</title>
 
         <link href="main.css" rel="stylesheet">
@@ -18,11 +19,11 @@
       <!--NAVIGATION BAR-->
         <nav id="navbar" class="navbar">
   <div class="logo">
-<nav>
+
       <a href = "landingPage.html" class = "logo">
-        <img src="img/mapastry-logo.png" alt="MaPastry Canadian Bakery logo">
+        <img src="img/mapastry-logo.png" alt="MaPastry Canadian Bakery logo (for about page)">
       </a>
-      </nav>
+    
   </div>
 
   <div class="main-nav">
@@ -33,16 +34,17 @@
 
    <div class="cart">
     <a href="checkout.html" class = "icon">
-      <img src="img/cart-icon.png" class = "default" alt="Shopping cart">
-      <img src="img/cart-hover.png" class="hover">
+      <img src="img/cart-icon.png" class = "default" alt="Shopping cart icon default (for about page)">
+      <img src="img/cart-hover.png" class="hover" alt="Shopping cart icon hover (for about page)">
     </a>
   </div>
+
 </nav>
         
         <section class="checkout-element">
+          <h2 class = "checkout-header">Your Cart</h2>
+            <p class = "checkout-subtitle">Just one more step until your order! Keep it up!</p>
             <div class="checkout-cart">
-                <div class="checkout-cart">
-            <h2>Your Cart</h2>
             <ul class="cart-items">
               <li class = "cart-header">
                 <div class = "header-product">Product</div>
@@ -76,8 +78,10 @@
             </ul>
           </div>
 
+          <h2 class = "payment-header">Checkout Form</h2>
+                <p class = "checkout-subtitle">Almost there! Just fill the payment form.</p>
+
             <form class="payment-form">
-                <h2>Checkout Form</h2>
             <div class = "form-elements">
               <label for = "form-name">Full Name:</label>
                 <input type = "text" name = "form-name" id = "form-name" placeholder = "John Johnson">
@@ -118,7 +122,7 @@
             <p>Phone: +1(234) 567-78-89</p>
           </div>
           <div class = "footer-column-second">
-            <h4>Pages</h4>
+            <h4>Website Pages</h4>
             <a href="landingPage.html" class="navFooter">Main Page</a>
             <a href="about.html" class="navFooter">About</a>
             <a href="product-list.html" class="navFooter">Menu</a>
