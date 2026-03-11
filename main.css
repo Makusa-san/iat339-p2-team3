@@ -316,13 +316,13 @@ p {
 
 
 
-.nav{
+.nav-link{
   background: #AD4804;
   color: #F7D888;
   text-decoration: none;
 }
 
-.nav:hover, .nav:focus {
+.nav-link:hover, .nav-link:focus {
   background: #6E2606;
   color: #FDFBD4; 
 }
