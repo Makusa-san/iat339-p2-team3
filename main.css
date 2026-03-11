@@ -316,13 +316,13 @@ p {
 
 
 
-.nav-link header{
+.nav{
   background: #AD4804;
   color: #F7D888;
   text-decoration: none;
 }
 
-.nav-link header:hover, .nav-link header:focus {
+.nav:hover, .nav:focus {
   background: #6E2606;
   color: #FDFBD4; 
 }
@@ -1755,20 +1755,6 @@ p a, li a {
 
 .citations-list a:hover {
   text-decoration: underline;
-}
-
-header nav a{
-  color:#F7D888;
-  text-decoration: none;
-  padding: 0.8rem 1rem;
-  transition: 0.2s;
-  margin-left: 1rem;
-
-}
-
-header nav a:hover{
-  background: #6E2606;
-  color: #FDFBD4
 }
 
 .style-guide-page h1{
