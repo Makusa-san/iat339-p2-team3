@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P02 - Style Guide Template</title>
+
+    <link href="main.css" rel="stylesheet">
+    <link href="grids.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!--used fonts-->
+
+  </head>
+
+  <body class = "style-guide-page">
+
+    <header class = "style-guide-header">
+      <h1>P02 - Style Guide Template</h1>
+
+    
+      <nav>        
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="#branding-ideas">Branding Ideas</a>
+        <a href="#branding-componenets">Branding Components</a>
+        <a href="index.html">Main Page</a>
+        <a href="about.html">About Us</a>
+        <a href="product-list.html">Product Listing Page</a>
+        <a href="maple-syrup-cheesecake.html">Detailed Product Page</a>
+        <a href="checkout.html">Checkout Page</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="citations.html">Citations</a>
+      </nav>
+
+    </header>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">
+
+        <h3>In-text link</h3>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;I want to see the &lt;a href = "#" class="text-link">catalogue&lt;/a&gt; and choose delicious desserts!&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>I want to see the <a href="#" class = "text-link" >catalogue</a> and choose delicious desserts!</p>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;About Us&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class = "button-nav" href="#">About Us</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>Sample code:</h4>
+        <code>&lt;button type = "form-button" type = "submit"&gt;Submit&lt;/button&gt;</code>
+        <code>&lt;button type = "form-buttonRESET" type = "reset"&gt;Reset&lt;/button&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <button class = "form-button" type = "submit">Submit</button>
+        <button class = "form-buttonRESET" type = "reset">Reset</button>
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>Sample code:</h4>
+        <code>&lt;label for = "form-phone"&gt;Phone Number:&lt;/label&gt;
+        &lt;input type = "text" name = "form-phone" id = "form-phone" placeholder = "+ x(xxx)xxx-xx-xx"&gt;</code>
+        <!--Source:https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label
+        I did this part using only class material at first, but I also checked on this website, that
+        "name" attribute is being used, so I included it just in case.-->
+
+        <h4>Rendered element:</h4>
+        <div class = "form-elements">
+          <label for = "form-phone">Phone Number:</label>
+          <input type = "text" name = "form-phone" id = "form-phone" placeholder = "+ x(xxx)xxx-xx-xx">
+        </div>
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <!-- learnt how to make custom radio button here: https://gist.github.com/Cutcopy/3fce01b4e66c4663ef27-->
+        <h4>Sample code:</h4>
+        <code>&lt;label class="radio"&gt;
+        &lt;input type="radio" name="plan"&gt;
+        &lt;span class="custom-radio"&gt;&lt;/span&gt;
+        Add Utensils
+        &lt;/label&gt;
+        </code>
+        <h4>Rendered element:</h4>
+        <label class="radio">
+        <input type="radio" name="plan">
+        <span class="custom-radio"></span>
+        Add Utensils
+        </label>
+
+        
+           
+        <!--looked up here about radio type: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio-->
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href = "#" class = "image-link"&gt;&lt;img src = "img/maple-cake.jpg" alt="a piece of maple syrup flavor cake lying on a plate"&gt;&lt;/a&gt; </code>
+        <h4>Rendered element:</h4>
+        <a href = "#" class = "image-link"><img src = "img/maple-cake.jpg" alt="a piece of maple syrup flavor cake lying on a plate"></a>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>Sample code:</h4>
+        <code> &lt;h2&gt;Heading Level 2&lt;/h2&gt; </code>
+        <code> &lt;h3&gt;Heading Level 3&lt;/h3&gt; </code> 
+        <code> &lt;h4&gt;Heading Level 4&lt;/h4&gt; </code> 
+        <code> &lt;h5&gt;Heading Level 5&lt;/h5&gt; </code> 
+
+        <h4>Rendered element:</h4>
+        <h2>Heading Level 2</h2>
+        <h3>Heading Level 3</h3>
+        <h4>Heading Level 4</h4>
+        <h5>Heading Level 5</h5>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;A delicious slice of a cheesecake, drizzled in maple syrup. Right from the oven. Made with our love.&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>A delicious slice of a cheesecake, drizzled in maple syrup. Right from the oven. Made with our love.</p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <!--looked up for tag <pre> so long code examples can be more readable in style guide: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/pre-->
+        <h4>Sample code:</h4>
+        <pre><code> 
+          &lt;ol class = "ordered-list"&gt;
+            &lt;li&gt; 125 Maple Street, Vancouver, BC M5H 2N2&lt;/li&gt;
+            &lt;li&gt; 47 Caramel Street West, Vancouver, BC M4L 5Y7&lt;/li&gt;
+            &lt;li&gt; 220 Electric  Avenue, Toronto, ON M5V 2Z3&lt;/li&gt;
+            &lt;li&gt; 138 Autumn Avenue, Toronto, ON 4Y5 6G1&lt;/li&gt;
+          &lt;/ol&gt;
+        </code></pre>
+
+        <h4>Rendered element:</h4>
+        <ol class = "ordered-list">
+          <li> 125 Maple Street, Vancouver, BC M5H 2N2</li>
+          <li> 47 Caramel Street West, Vancouver, BC M4L 5Y7</li>
+          <li> 220 Electric  Avenue, Toronto, ON M5V 2Z3</li>
+          <li> 138 Autumn Avenue, Toronto, ON 4Y5 6G1</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <!--looked up for tag <pre> so long code examples can be more readable in style guide: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/pre-->
+        <h4>Sample Code:</h4>
+        <pre><code> 
+          &lt;nav class = "main-nav"&gt;
+            &lt;a href = "#" class = "nav-link"&gt;Home&lt;/a&gt;
+            &lt;a href = "#" class = "nav-link"&gt;Menu&lt;/a&gt;
+            &lt;a href = "#" class = "nav-link"&gt;Contact and Locations&lt;/a&gt;
+            &lt;a href = "#" class = "nav-link"&gt;About Us&lt;/a&gt;
+          &lt;/nav&gt;
+        </code></pre>
+
+        <h4>Rendered element:</h4>
+        <nav class="main-nav">
+          <div class = "main-nav">
+          <a href="#" class="nav">Home</a>
+          <a href="#" class="nav">Menu</a>
+          <a href="#" class="nav">Contact and Locations</a>
+          <a href="#" class="nav">About Us</a>
+          </div>
+        </nav>
+
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+        <h4>Sample code:</h4>
+        <pre><code>
+          &lt;div class="product-listing"&gt;
+            &lt;h4 class = "product-name"&gt;Maple Syrup Cheesecake&lt;/h4&gt;
+            &lt;a href = "#"&gt;
+              &lt;img src="img/maple-cake.jpg" alt = "A delicious slice of a cheesecake." class="product-image"&gt;
+            &lt;/a&gt;
+            &lt;p class="product-description"&gt;A rich and creamy cheesecake with real maple syrup topping.&lt;/p&gt;
+            &lt;p class="product-allergens"&gt;Contains: Dairy, Eggs, Gluten, Nuts&lt;/p&gt;
+            &lt;div class = "card-footer"&gt;
+              &lt;p class="product-cost"&gt;$6.35&lt;/p&gt;
+              &lt;a href = "#" class =" product-link"&gt;Add to Cart&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code></pre>
+
+        <h4>Rendered element:</h4>
+        <div class="product-listing">
+          <a href="#" class = "image-link">
+            <img src="img/maple-cake.jpg" alt="A delicious slice of a cheesecake.">
+          </a>
+          <div class = "product-info">
+            <h4 class="product-name">Maple Syrup Cheesecake</h4>
+            <p class="product-allergens">Contains: Dairy, Eggs, Gluten, Nuts</p>
+          </div>
+          <p class="product-description">A rich and creamy cheesecake with real maple syrup topping.</p>
+          <div class = "card-footer">
+            <p class="product-cost">$6.35</p>
+            <a href="#" class="form-button">Add to Cart</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+
+        <h4>Sample Code:</h4>
+        <pre><code>
+          &lt;form class="payment-form"&gt;
+            &lt;div class="form-elements"&gt;
+              &lt;label for="form-name"&gt;Full Name:&lt;/label&gt;
+                &lt;input type="text" name="form-name" id="form-name" placeholder="+ x(xxx)xxx-xx-xx"&gt;
+              &lt;label for="form-phone-num"&gt;Phone Number:&lt;/label&gt;
+                &lt;input type="text" name="form-phone-num" id="form-phone-num" placeholder="John Johnson"&gt;
+              &lt;label for="form-email"&gt;Email:&lt;/label&gt;
+                &lt;input type="text" name="form-email" id="form-email" placeholder="john_johnson@bakery.ca"&gt;
+              &lt;label for="form-address"&gt;Address:&lt;/label&gt;
+                &lt;input type="text" name="form-address" id="form-address" placeholder="Caramel Avenue 123"&gt;
+              &lt;label for="form-post"&gt;Postal Code:&lt;/label&gt;
+                &lt;input type="text" name="form-post" id="form-post" placeholder="A1A 1A1"&gt;
+            &lt;/div&gt;
+
+            &lt;p&gt;Choose Your Payment Method:&lt;/p&gt;
+
+            &lt;label class="radio"&gt;
+            &lt;input type="radio" name="plan"&gt;
+            &lt;span class="custom-radio"&gt;&lt;/span&gt;
+            Credit/Debit Card
+            &lt;/label&gt;
+            &lt;label class="radio"&gt;
+            &lt;input type="radio" name="plan"&gt;
+            &lt;span class="custom-radio"&gt;&lt;/span&gt;
+            PayPal
+            &lt;/label&gt;
+            &lt;button class="form-button" type="submit"&gt;Submit&lt;/button&gt;
+          &lt;/form&gt;
+        </code></pre>
+
+
+        <h4>Rendered element:</h4>
+          <form class="payment-form">
+            <div class = "form-elements">
+              <label for = "form-name">Full Name:</label>
+                <input type = "text" name = "form-name" id = "form-name" placeholder = "John Johnson">
+              <label for = "form-phone-num">Phone Number:</label>
+                <input type = "text" name = "form-phone-num" id = "form-phone-num" placeholder = "+ x(xxx)xxx-xx-xx">
+              <label for = "form-email">Email:</label>
+                <input type = "text" name = "form-email" id = "form-email" placeholder = "john_johnson@bakery.ca">
+              <label for = "form-address">Address:</label>
+                <input type = "text" name = "form-address" id = "form-address" placeholder = "Caramel Avenue 123">
+              <label for = "form-post">Postal Code:</label>
+                <input type = "text" name = "form-post" id = "form-post" placeholder = "A1A 1A1">
+            </div>
+
+            <p>Choose Your Payment Method:</p>
+
+            <label class="radio">
+            <input type="radio" name="plan">
+            <span class="custom-radio"></span>
+            Credit/Debit Card
+            </label>
+            <label class="radio">
+            <input type="radio" name="plan">
+            <span class="custom-radio"></span>
+            PayPal
+            </label>
+
+            <button class="form-button" type="submit">Submit</button>
+            </form>
+            </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+
+        <h4>Sample Code:</h4>
+        <pre><code>
+        &lt;div class="checkout-cart"&gt;
+          &lt;h4&gt;Your Cart&lt;/h4&gt;
+          &lt;ul class="cart-items"&gt;
+            &lt;li class="cart-item"&gt;
+              &lt;div class="cart-item-name"&gt;Maple Syrup Cheesecake&lt;/div&gt;
+              &lt;div class="cart-item-price"&gt;$6.35&lt;/div&gt;
+              &lt;div class="cart-item-image"&gt;
+                &lt;img src="img/maple-cake.jpg" alt="Maple Syrup Cheesecake"&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="cart-item"&gt;
+              &lt;div class="cart-item-name"&gt;Walnut Oat Latte (No caffeine)&lt;/div&gt;
+              &lt;div class="cart-item-price"&gt;$7.35&lt;/div&gt;
+              &lt;div class="cart-item-image"&gt;
+                &lt;img src="img/walnut-latte.jpg" alt="Walnut Oat Latte"&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="cart-item"&gt;
+              &lt;div class="cart-item-name"&gt;Sugar Cookie&lt;/div&gt;
+              &lt;div class="cart-item-price"&gt;$2.35&lt;/div&gt;
+              &lt;div class="cart-item-image"&gt;
+                &lt;img src="img/sugar-cookie.jpg" alt="Sugar Cookie"&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;p class="cart-total"&gt;Total: $16.05&lt;/p&gt;
+        &lt;/div&gt;
+        </code></pre>
+
+
+        <h4>Rendered element:</h4>
+          <div class="checkout-cart">
+            <h4>Your Cart</h4>
+            <ul class="cart-items">
+              <li class = "cart-header">
+                <div class = "header-product">Product</div>
+                <div class = "header-price">Price</div>
+              </li>
+              <li class="cart-item">
+                <div class="item-details">
+                  <img src="img/maple-cake.jpg" alt="Maple Syrup Cheesecake" class="cart-item-image"> <!--cheesecake image: https://www.google.com/search?sca_esv=449808707ab54592&rlz=1C5CHFA_enRU907RU908&sxsrf=ANbL-n4_2D99c-ySaFGrkwpUbXqF6I4DnA:1769443565425&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKp9lEhFAN_4ain3HSNQWw-mCdteDOdu-whizqull19J697Hd2DjFbIIkobt5MxzWRrbQzH3_BR0OTUD3HedzAmCP3hjuTMJT6f6QsidAo8PcZbRUfjd37k2TVsaGn2-AFP1raUx1RsslEKQg4GU355hj3-DpxvTGIQL5eNoRPHcNl1EwfTXZBdG1ewbfq_hCqn_nk0sQ&q=maple+cheesecake&sa=X&sqi=2&ved=2ahUKEwj3gav5yqmSAxVMEjQIHQCUFR4QtKgLegQIGhAB&biw=1422&bih=849&dpr=2&aic=0#vhid=mEJMOMpN0LvPjM&vssid=mosaic-->
+                  <div class="item-name">Maple Syrup Cheesecake</div>
+                </div>
+                <div class="item-price">$6.35</div>
+              </li>
+              <li class="cart-item">
+                <div class="item-details">
+                  <img src="img/latte.jpeg" alt="Walnut Oat Latte" class="cart-item-image"> <!--latte image: https://myveganminimalist.com/oat-milk-latte-foamy-vegan/-->
+                  <div class="item-name">Walnut Oat Latte (No caffeine)</div>
+                </div>
+                 <div class="item-price">$7.35</div>
+              </li>
+              <li class="cart-item">
+                <div class="item-details">
+                  <img src="img/cookie.jpg" alt="Sugar Cookie" class="cart-item-image"> <!--cookie image: https://sallysbakingaddiction.com/giant-sugar-cookie/-->
+                  <div class="item-name">Sugar Cookie</div>
+                </div>
+                <div class="item-price">$2.35</div>
+              </li>
+              <li class="cart-total">
+                <div class="total-label">Total:</div>
+                <div class="total-value">$16.05</div>
+              </li>
+            </ul>
+          </div>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section id = "branding-ideas">
+      <h2>Branding Ideas</h2>
+      <h3>What does the company do, or offer?</h3>
+      <p>Name: MaPastry. "Ma" stands for maple, "Pastry"... for pastry! MaPastry is a company, which consists of cafes chain, which offer baked goods with maple syrup as their signature dishes alongside traditional Canadian desserts and drinks, like coffee and tea.
+
+      Baked goods with maple syrup are chosen as signature dishes, since maple syrup is one of most well-known ingredients around to world and a lot of people think about Canada when they see maple syrup. This correlates with one the company’s goals to spread Canadian food culture around the world through offering traditional desserts. And of course, MaPastry is a warm home for its own nation, where they can always have a taste ot their cultural food. 
+
+      MaPastry offers both in-cafe visits and food deliveries. 
+      </p>
+
+      <h3>Who is the company to potential customers? (as a person)</h3>
+
+      <p>MaPastry is a brand with a warm and welcoming vibe , being cultural grounded. As a brand, it is very approachable, comforting, offering a sense familiarity to Canadians, while also remaining curious to people, who explore Canadian culture. MaPastry values are warmth, comfort and preservation of traditions. 
+      Our company presents itself as a bridge to culture and delicious food experience through desserts and drinks.</p>
+     
+      <h3>Why might this company entice someone to purchase a product or service?</h3>
+      
+      <p>MaPastry attracts customers by offering something that feels both familiar and meaningful. For Canadians, the flavours create a sense of comfort and connection to home. For visitors and newcomers, the café becomes an easy way to experience Canadian food culture through desserts and drinks. By focusing on warmth, tradition, and a clear cultural identity, MaPastry stands out from more generic café chains.</p>
+    </section>
+    
+    <section id = "branding-componenets">
+      <h2>Branding Components</h2>
+
+      <h3>Fonts</h3>
+
+      <h4>Arima Madurai & Charis SIL</h4>
+
+      <img src="img/fonts-maPastry.png" width = 550 alt = "fonts used for MaPastry's website">
+
+      <p>Arima Madurai is used for headings to give the brand a warm and friendly feel. Its rounded letterforms help communicate MaPastry’s welcoming café atmosphere and make the brand feel approachable and easy to connect with, making a closer contact between the company and customer.
+
+        Charis SIL is used for body text because it is clean and easy to read, giving a fast access to information. Together, Charis SIL and Arima Madurai create a balance between warm personality and clarity, showing combination of MaPastry’s values: coziness and tradition, combined with modern time.
+      </p>
+
+      <h3>Colour Palette</h3>
+      <img src = img/color-palette.png width = 550 alt="color palette of MaPastry Brand">
+      <p>MaPastry's color palette is built around warm colors, which are inspired by earth themes and baking good. Creamy white is being used for background, keeping interface calm and soft, while golden and browny tones
+        translate sweetness of our production (yeah, like a maple syrup) and will be used for UI elements along with green, which is being used for contrast, but still keeping cozy theme, while darker brown will be used for text.
+        Red will be the primary color for the header.  
+      </p>
+
+      <h3>Potential Imagery</h3>
+
+      <p>Imagery of Mapastry strives inviting and warm atmospere, drawing attention with its high-quality photos of desserts and visuals elements, inspired by food items. Apart from that there might will be additional decorative elements, inspired by nature like maple leaves, possibly wooden textures or 
+        small animals in some sections to translate the atmosphere of Canada to both locals and newcomers. 
+        
+        Combining softness of headings and clean body text font, mostly warm, analogus and neutral color palette and visual elements, representing parts of Canada lead to inviting look for the MaPastry website.
+        Together, these componenets communicate warmth, comfort, and cultural identity, giving a pleasing experience for both big groups of potential customers.
+      </p>
+
+       <img src = img/landing-page-idea1.png class = image-link width = 550 alt="main page of the MaPastry's website">
+       <img src = img/landing-page-idea2.png class = image-link width = 550 alt="a second idea for main page of the MaPastry's website">
+       <img src = img/canadian-dishes.png class = image-link width = 550 alt="a picture of pastry dishes: donut, croissants, pancakes and maple leaf">
+       <img src = img/landing-page-image1.png class = image-link width = 550 alt="a drawing of the bakery with pastry goods and bottle of maple syrup">
+       <img src="img/maple-cake.jpg" alt="Maple Syrup Cheesecake" width = 170 height = 170>
+       <img src="img/latte.jpeg" alt="Walnut Oat Latte" width = 170 height = 170>
+       <img src="img/cookie.jpg" alt="Sugar Cookie" width = 170 height = 170>
+       <img src="img/shop-icons.png" alt="shop icons" width = 670 height = 170> <!-- taken from https://www.figma.com/community/file/1156555637629672146-->
+
+    </section>
+
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#" class = "text-link">URL</a>.</li>
+
+        <li>Carlee. (2025, November 11). <strong>Maple Brown Butter Glaze [Image]</strong>. Cooking With Carlee. Retrieved February 2, 2026, from <a href="https://cookingwithcarlee.com/maple-browned-butter-glaze/" class = "text-link">https://cookingwithcarlee.com/maple-browned-butter-glaze/</a>.</li>
+        <li>Donangelo, K. (n.d.). <strong>Giant Sugar Cookies [Image]</strong>. Kathryns Kitchen Blog. Retrieved February 2, 2026, from <a href="https://kathrynskitchenblog.com/giant-sugar-cookie-recipe/" class = "text-link">https://kathrynskitchenblog.com/giant-sugar-cookie-recipe/</a>.</li>
+        <li>Ferko, T. (2020, February 26). <strong>The Best Oat Milk Latte at Home (Easy 5-min Homemade Coffee) [Image of oat milk latte in mug]</strong>. My Vegan Minimalist. Retrieved February 2, 2026, from <a href="https://myveganminimalist.com/oat-milk-latte-foamy-vegan/" class = "text-link">https://myveganminimalist.com/oat-milk-latte-foamy-vegan/</a>.</li>
+        <li>Figma Community. Retrieved February 2, 2026, from <a href="https://www.figma.com/community/file/988557441862958442" class = "text-link">https://www.figma.com/community/file/988557441862958442</a>.</li>
+        <li>Google. (n.d.). <strong>Arima Madurai & Mulish [Web fonts]</strong>. Google Fonts. Retrieved February 2, 2026, from  <a href="https://fonts.google.com/x" class = "text-link">https://fonts.google.com/</a>.</li>
+        <li>Google. (n.d.). <strong>Charis SIL [Web font]</strong>. Google Fonts. Retrieved February 2, 2026, from<a href="https://fonts.google.com/" class="text-link">https://fonts.google.com/</a>.</li>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans" class = "text-link">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Adobe Firefly. (2026). AI-generated image of a cafe with pastry and maple syrup bottles [AI‑generated image]. Adobe Firefly. https://firefly.adobe.com/generate/image</li>
+        <li>Adobe Firefly. (2026). AI-generated image of bakery pastry, such as donut, croissant, pancakes and maple leaft [AI‑generated image]. Adobe Firefly. https://firefly.adobe.com/generate/image</li>
+      </ul>
+
+    </section>
+
+  </body>
+</html>
